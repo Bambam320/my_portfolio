@@ -1,4 +1,13 @@
+import { Routes, Route } from "react-router-dom";
+
 import '../CSS/App.css';
+import Navbar from "./Navbar";
+import AboutMe from "./AboutMe";
+import Experience from "./Experience";
+import Technical from "./Technical";
+import Skill from "./Skill";
+import Blog from "./Blog";
+import Contact from "./Contact";
 
 function App() {
   return (
