@@ -1,16 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import '../CSS/App.css';
 
 function App() {
   return (
+    <>
+    <Navbar />
     <Routes>
-      <Route path="/about" element={<About/>} />
-      <Route path="/skills" element={<Skills/>} />
-      <Route path="/projects" element={<Project/>} />
-      <Route path="/algorithms" element={<Algorithms/>} />
-      <Route path="/blogs" element={<Blogs/>} />
-      <Route path="/contact" element={<Contact/>} />
+      <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/experience" element={<Experience />} />
+      <Route path="/technical" element={<Technical />} />
+      <Route path="/skill" element={<Skill />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
+    </>
   );
 }
 
