@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-drection: column;
+  flex-direction: column;
   background-color: rgba(26, 221, 26, 0.533);
   height: 100%;
   width: 20rem;
@@ -64,3 +64,30 @@
   text-decoration: underline;
 }
 
+#first-nav-link {
+  border-top: 1px solid #964949
+}
+
+.nav-link h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.85;
+  border-bottom: 1px solid #0eda41;
+  transition: transform .1s ease;
+}
+
+.nav-link:hover {
+  color: #fd2d08;
+}
+
+.nav-link:active h1{
+  transform: scale(.95);
+}
+
+.nav-item {
+  position: relative;
+  font-size: .75rem;
+  margin: 0 1rem;
+  line-height: 3.5rem;
+  width: 100%;
+}
