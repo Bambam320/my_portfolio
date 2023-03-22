@@ -1,11 +1,32 @@
-.navbar-toggle-button {
+.navbar-toggle {
   display: none;
 }
+
 .navbar-container {
   position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: column;
-  background-color: #181818;
+  flex-drection: column;
+  background-color: rgba(26, 221, 26, 0.533);
+  height: 100%;
+  width: 20rem;
+  top: 0;
+  left: 0;
+  z-index: 150;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: colulmn;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.navbar-top img {
+  height: 10rem;
+  width: 10rem;
+  transition: all .5s ease;
 }

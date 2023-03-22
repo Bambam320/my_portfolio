@@ -1,13 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
 import '../CSS/App.css';
-import Navbar from "./Navbar";
 import AboutMe from "./AboutMe";
-import Experience from "./Experience";
-import Technical from "./Technical";
-import Skill from "./Skill";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Experience from "./Experience";
+import Home from "./Home";
+import Navbar from "./Navbar";
+import Skill from "./Skill";
+import Technical from "./Technical";
 
 function App() {
   return (
