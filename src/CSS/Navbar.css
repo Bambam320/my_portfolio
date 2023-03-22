@@ -64,7 +64,7 @@
   text-decoration: underline;
 }
 
-#first-nav-link {
+.nav-link h1 {
   border-top: 1px solid #964949
 }
 
