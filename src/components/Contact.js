@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../components/Blog.css';
+import '../CSS/Blog.css';
 
 function Contact() {
   return (

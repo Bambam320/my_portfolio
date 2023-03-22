@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../components/Technical.css';
+import '../CSS/Technical.css';
 
 function Technical() {
   return (

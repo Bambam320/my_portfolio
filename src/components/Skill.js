@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../components/Skill.css';
+import '../CSS/Skill.css';
 
 function Skill() {
   return (
