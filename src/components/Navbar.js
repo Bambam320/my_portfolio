@@ -1,12 +1,13 @@
-import React, { useEffect } from 'react'
-import { NavLink } from 'react-router-dom';
-
-
+import React, { useEffect, useState } from 'react';
+import { useNavigate, NavLink } from 'react-router-dom';
+import { BsMedium, BsLinkedin, BsGithub } from 'react-icons/bs';
+import emblem from '../Media/Images/Emblem.jpg';
 import "../CSS/Navbar.css";
 
 function Navbar() {
-
-
+  const navigate = useNavigate()
+  const [navActive, setNavActive] = useState(false)
+  
   useEffect(() => {
     let style = document.body.style
     navActive ? 
@@ -14,6 +15,13 @@ function Navbar() {
     :
       style.overflow = 'unset'
   }, [navActive])
+
+  const handleLogoClick = () => {
+    navigate('/contact')
+    deactivateNav()
+  }
+
+  const deactivateNav = () => setNavActive(false)
 
   return (
     <>
@@ -104,13 +112,13 @@ function Navbar() {
         </ul>
         <div className="navbar-bottom">
           <a href="https://www.linkedin.com/in/igor-mestechkin-519a97109/" target="_blank" rel="noopener noreferrer" >
-            <FaLinkedin className='nav-icon' />
+            <BsLinkedin className='nav-icon' />
           </a>
           <a href="https://github.com/Bambam320" target="_blank" rel="noopener noreferrer" >
-            <FaGithub className='nav-icon' />
+            <BsGithub className='nav-icon' />
           </a>
           <a href="https://medium.com/@igor.mestechkin" target="_blank" rel="noopener noreferrer">
-            <FaMedium className='nav-icon' />
+            <BsMedium className='nav-icon' />
           </a>
         </div>
       </div>
