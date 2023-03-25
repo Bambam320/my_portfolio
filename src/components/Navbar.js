@@ -25,6 +25,12 @@ function Navbar() {
 
   return (
     <>
+      <p className="navbar-toggle" onClick={() => setNavActive(!navActive)}>
+        <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
+        <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
+        <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
+        <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
+      </p>
       <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
         <div className="navbar-top">
           <img src={emblem} alt="IM" onClick={() => handleLogoClick} />

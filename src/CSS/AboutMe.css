@@ -1,0 +1,14 @@
+.about-container {
+  padding: 2.5rem 0 5rem 20rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* left hand */
+.about-left-box {
+  padding-left: 5.5rem;
+}
+
+.about-left-title:before

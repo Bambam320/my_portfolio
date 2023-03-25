@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  background-color: rgba(26, 221, 26, 0.533);
+  background-color: #00A676;
   height: 100%;
   width: 20rem;
   top: 0;
@@ -39,13 +39,13 @@
 .navbar-top h1 {
   margin-top: 1rem;
   font-size: 2.35rem;
-  color: rgb(152, 109, 80);
+  color: #f2f2f2;
 }
 
 .navbar-top p {
   margin-top: 1rem;
   font-size: 1.25rem;
-  color: rgba(143, 143, 143, 0.933);
+  color: #f2f2f2;
 }
 
 .nav-menu {
@@ -60,7 +60,7 @@
 }
 
 .nav-link { 
-  color: #9f0000fd;
+  color: #011936;
   text-decoration: underline;
 }
 
@@ -72,7 +72,7 @@
   font-size: 2rem;
   font-weight: 400;
   line-height: 2.85;
-  border-bottom: 1px solid #0eda41;
+  border-bottom: 1px solid #f2f2f2;
   transition: transform .1s ease;
 }
 
@@ -128,13 +128,13 @@
 
 .nav-icon {
   font-size: 2.5rem;
-  color: #909096;
-  transition: all .25s ease;
+  color: #ddddec;
+  transition: all .75s ease-out;
 }
 
 .nav-icon:hover {
-  color: #08fdd8;
-  transition: scale(1.085);
+  color: #11592b;
+  transition: scale(10);
 }
 
 /* Formatting for 1250px */
@@ -164,7 +164,7 @@
     right: 1.25rem;
     width: 6rem;
     height: 5.5rem;
-    background-color: #000000;
+    background-color: #00A676;
     border-radius: 3px;
     z-index: 75;
     cursor: pointer;
@@ -202,11 +202,6 @@
   .navbar-continer.navActive {
     display: flex;
     animation: navDafeBack .25s ease forwards;
-  }
-  @keyframes navFadeBack {
-    100% {
-      opacity: 1;
-    }
   }
   .navbar-top img {
     height: 11rem;
