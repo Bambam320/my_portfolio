@@ -12,7 +12,7 @@
 }
 
 .about-left-title:before {
-  content: '<h1>';
+  content: '';
   position: absolute;
   font-family: cursive;
   color: #A12322;
@@ -103,3 +103,18 @@
 #about-Ex8 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 2.55s; }
 #about-Rx4 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 2.6s; }
 #about-periodx2 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 2.65s; }
+
+@keyframes aboutTitleAfterFade {
+  100% {opacity: 1}
+}
+
+.about-left-title:after {
+  content: '';
+  position: absolute;
+  font-size: 14px;
+  font-weight: 200;
+  font-family: cursive;
+  color:#f2f2f2;
+  margin-top: 2.25rem;
+  margin-left: 1rem;
+}
