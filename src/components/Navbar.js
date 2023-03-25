@@ -8,6 +8,12 @@ function Navbar() {
 
   return (
     <>
+      <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
+      <div className="navbar-top">
+        <img src={emblem} alt="IM" onClick={() => handleLogoClick} />
+        <h2> Igor Mestechkin </h2>
+        <p> Full Stack Developer </p>
+      </div>
       <ul className="nav-menu">
         <li className="nav-item">
           <NavLink 
@@ -80,13 +86,19 @@ function Navbar() {
             to="/contact"
             className="nav-link"
             activeClassName="active"
-          >
+            >
             <h1>
               Contact
             </h1>
           </NavLink>
         </li>
       </ul>
+      <div className="navbar-bottom">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          
+        </a>
+      </div>
+            </div>
     </>
   )
 }

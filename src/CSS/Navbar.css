@@ -226,3 +226,28 @@
 }
 
 /* Formatting for 480px */
+@media (max-width: 480px) {
+  .navbar-top img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .navbar-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 5rem;
+    height: 4.5rem;
+    border-radius: 2px;
+  }
+  .navbar-toggle .navbar-line {
+    height: 3.25px;
+    margin: 3.5px 0;
+  }
+  .navbar-line:nth-child(1).navActive {
+    transform: translate(0, 10px) rotate(45deg);
+    height: 4px;
+  }
+  .navbar-line:nth-cild(3).navActive {
+    transform: translate(0, 11px) rotate(-45deg);
+    height: 4px;
+  }
+}
