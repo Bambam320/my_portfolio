@@ -392,4 +392,143 @@
   .about-right-description {
     font-size: 1.55rem;
   }
+  .about-contact-button {
+    font-size: 14px;
+    line-height: 48.5px;
+    height: 48.5px;
+    width: 180px;
+  }
+  .about-resume-box {
+    gap: 1rem;
+  }
+  .about-resume-title {
+    font-size: 1.85rem;
+  }
+  .about-resume-pdf {
+    height: 4.75rem;
+    width: 4.75rem;
+  }
+  .about-resume-googleDocs {
+    height: 4.6rem;
+    width: 4.6rem;
+  }
+  .about-resume-buttons-wrapper {
+    gap:.25rem;
+  }
+  .about-left-description {
+    font-size: 1.5rem;
+  }
+}
+
+/* Formatting for 1100px */
+@media (max-width: 1100px) {
+  .about-container {
+    padding: 2.5rem 0 5rem 2rem;
+  }
+  .about-right-box {
+    padding-right: 5rem;
+  }
+}
+
+/* Formatting for 1000px */
+@media (max-width: 1000px) {
+  .about-container {
+    padding: 2.5rem 0 5rem 0;
+  }
+  .about-right-box {
+    padding-right: 3rem;
+  }
+}
+
+/* Formatting for 950px */
+@media (max-width: 950px) {
+  .about-left-title {
+    font-size: 6.5rem;
+    line-height: 7.5rem;
+  }
+  .about-right-title {
+    font-size: 5rem;
+    line-height: 12rem;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .about-left-box {
+    padding-left: 0rem;
+    margin: 5rem 0;
+  }
+  .about-right-box {
+    padding-right: 0rem;
+    width: 40rem;
+    margin: 0 0 2.5rem;
+  }
+  .about-right-description {
+    font-size: 1.8rem;
+  }
+}
+
+/* Formatting for 650px */
+@media (max-width: 650px) {
+  .about-container {
+    min-height: 0;
+  }
+  .about-left-title {
+    font-size: 5rem;
+    line-height: 6.25rem;
+  }
+  .about-left-description {
+    font-size: 1.5rem;
+  }
+  .about-right-title {
+    font-size: 4rem;
+    line-height: 10rem;
+  }
+  .about-right-description {
+    font-size: 1.4rem;
+  }
+  .about-contact-button {
+    font-size: 12px;
+    line-height: 45px;
+    height: 45px;
+    width: 165px;
+  }
+  .about-resume-title {
+    font-size: 1.65rem;
+  }
+  .about-resume-pdf {
+    height: 4.35rem;
+    width: 4.35rem;
+  }
+  .about-resume-googleDocs {
+    height: 4.25rem;
+    width: 4.25rem;
+  }
+  .about-resume-buttons-wrapper {
+    gap: 0;
+  }
+  .about-right-title:before {
+    margin-top: -3rem;
+  }
+  .about-right-title:after {
+    bottom: -3.25rem;
+  }
+}
+
+/* Formatting for 480px */
+@media (max-width: 480px) {
+  .about-left-title:before {
+    margin-top: -3.35rem;
+  }
+  .about-left-title {
+    font-size: 4.125rem;
+    line-height: 5.125rem;
+  }
+  .about-left-title:after {
+    margin-top: 1.25rem;
+    margin-left: .75rem;
+  }
+  .about-left-description {
+    font-size: 1.35rem;
+    letter-spacing: 2px;
+  }
 }
