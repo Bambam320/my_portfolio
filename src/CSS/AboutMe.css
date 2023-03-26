@@ -531,4 +531,68 @@
     font-size: 1.35rem;
     letter-spacing: 2px;
   }
+  .about-right-box {
+    width: 30rem;
+  }
+  .about-contact-button {
+    font-size: 12px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    height: 43px;
+    width: 140px;
+  }
+  .about-resume-box {
+    margin-left: 2rem;
+    gap: 1rem;
+  }
+  .about-resume-title {
+    font-size: 1.5rem;
+  }
+  .about-resume-pdf {
+    height: 4rem;
+    width: 4rem;
+    margin-top: .2rem;
+  }
+  .about-resume-googleDocs {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+}
+
+/* Formatting for 390px */
+@media (max-width: 390px) {
+  .about-left-title:before {
+    margin-top: -3.125rem;
+  }
+  .about-left-title {
+    font-size: 3.75rem;
+  }
+  .about-left-title:after {
+    margin-top: 1.35rem;
+    margin-top: .65rem;
+  }
+  .about-left-description {
+    font-size: 1.25rem;
+  }
+  .about-contact-button {
+    font-size: 12px;
+    line-height: 38px;
+    height: 39px;
+    width: 125px;
+  }
+  .about-resume-box {
+    margin-left: 1.65rem;
+    gap: .5rem;
+  }
+  .about-resume-title {
+    font-size: 1.35rem;
+  }
+  .about-resume-pdf {
+    height: 3.65rem;
+    width: 3.65rem;
+  }
+  .about-resume-googleDocs {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
 }
