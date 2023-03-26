@@ -1,0 +1,44 @@
+.skills-container {
+  padding: 3.5rem 0 3.5rem 18.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.skills-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+@keyframes skillsHeaderFade {
+  10% {opacity: 0}
+  50% {margin-top: 0rem; margin-bottom: 0rem;}
+  100% {opacity: 1; margin-top: 0rem; margin-bottom: 0rem;}
+}
+
+.skills-header {
+  position: relative;
+  color: white;
+  font-size: 6.25rem;
+  font-weight: 600;
+  animation: skillsHeaderFade 2s ease forwards;
+  margin-top: 3.5rem;
+  margin-bottom: -3.5rem;
+  opacity: 0;
+}
+
+.skills-header span {
+  display: inline-block;
+  transition: color .35s ease;
+}
+
+.skills-header span:hover {
+  color: #a0a0a0;
+  animation: contactBounce 1s ease forwards;
+}
