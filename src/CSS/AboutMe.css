@@ -275,3 +275,121 @@
 }
 
 /* right hand */
+@keyframes aboutRightHandFade {
+  100% {opacity : 1}
+}
+
+.about-right-box {
+  padding-right: 6.5rem;
+  width: 42.5%;
+  animation: aboutRightHandFade 1.5s ease 1.5s forwards;
+  opacity: 0;
+}
+
+.about-right-title:before {
+  content: '';
+  position: absolute;
+  font-family: cursive;
+  color: #515152;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: -3.75rem;
+  left: -1rem;
+}
+
+.about-right-title {
+  position: relative;
+  color: #08fdd8;
+  font-size: 5.25rem;
+  line-height: 12.65rem;
+  font-weight: 500;
+}
+
+.about-right-title:after {
+  content: '';
+  position: absolute;
+  font-family: cursive;
+  color: #515152;
+  font-size: 14px;
+  font-weight: 200;
+  left: -1rem;
+  bottom: -3.75rem;
+}
+
+.about-right-description:before {
+  content: '';
+  position: absolute;
+  font-family: cursive;
+  color: #515152;
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: -2.5rem;
+  left: -1rem;
+}
+
+.about-right-description {
+  margin-top: 2rem;
+  position: relative;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+
+.about-right-description span {
+  text-decoration: underline;
+  font-weight: 500;
+  color: #08fdd8;
+  cursor: pointer;
+}
+
+.about-right-description:after {
+  content: '';
+  position: absolute;
+  font-family: cursive;
+  color: #515152;
+  font-size: 14px;
+  font-weight: 200;
+  left: -1rem;
+  bottom: -2.5rem;
+}
+
+/* Formatting for 1400px */
+@media (max-width: 1400px) {
+  .about-left-title {
+    font-size: 7rem;
+    line-height: 8.25rem;
+  }
+}
+
+/* Formatting for 1300px */
+@media (max-width: 1300px) {
+  .about-left-title {
+    font-size: 6.5rem;
+    line-height: 7.5rem;
+  }
+  .about-right-title {
+    font-size: 5rem;
+    line-height: 12rem;
+  }
+}
+
+/* Formatting for 1250px */
+@media (max-width: 1250px) {
+  .about-container {
+    padding: 2.5rem 0 5rem 17rem;
+  }
+}
+
+/* Formatting for 1200px */
+@media (max-width: 1200px) {  
+  .about-left-title {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+  .about-right-title {
+    font-size: 4.5rem;
+    line-height: 11.5rem;
+  }
+  .about-right-description {
+    font-size: 1.55rem;
+  }
+}
