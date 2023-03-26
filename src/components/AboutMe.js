@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import pdfIcon from '../Media/Images/PDFIcon.jpg';
+import googleDocIcon from '../Media/Images/GoogleDocIcon.jpg';
 
 import '../CSS/AboutMe.css';
 
@@ -6,6 +10,7 @@ function AboutMe() {
   return (
     <div className="about-container">
       <div className="about-left-box">
+        {/* change animation to rotate 360 on y and then backflip */}
         <h1 className="about-left-title">
           <span id="about-W">W</span>
           <span id="about-E">E</span>
@@ -63,6 +68,50 @@ function AboutMe() {
           <span id="about-Rx4">R</span>
           <span id="about-period2">.</span>
         </h1>
+        {/* Add true true and console log description with typing animation */}
+        <p className='about-left-description'>
+          Full Stack Developer && Language Enthusiast
+        </p>
+        <div className='about-left-button-box'>
+          <button 
+            onClick={() => navigate('/contact')} 
+            className='about-contact-button'
+          >
+            Contact me!
+          </button>
+          <div className='about-resume-box'>
+            <h2 className='about-resume-title'>My Resume:</h2>
+            <div className="about-resume-buttons-wrapper">
+              <a
+                href="Igor-M-Resume-3-25-22.pdf"
+                download
+                >
+                  <img 
+                    className='about-resume-pdf'
+                    src={PDF_Icon}
+                    alt="Resume_PDF"
+                  />
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className='about-resume-googleDocs'
+                  src={GoogleDocs-Icon}
+                  alt="Resume_GoogleDocs"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className='about-right-box'>
+        <div className='about-right-title'> About Me </div>
+        <p className='about-right-description'>
+          About me from Linkedin
+        </p>
       </div>
     </div>
   )
