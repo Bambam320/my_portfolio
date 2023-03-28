@@ -42,3 +42,89 @@
   color: #a0a0a0;
   animation: contactBounce 1s ease forwards;
 }
+
+.skills-description {
+  position: relative;
+  font-family: Baskerville;
+  display: flex;
+  align-items: flex-start;
+  font-size: .735rem;
+  width: 95.5rem;
+  height: 2.5rem;
+  margin-top: 2rem;
+}
+
+.skills-box:first-of-type {
+  margin-top: 7.5rem;
+}
+
+@keyframes skillsBoxFade {
+  100% {opacity: 1}
+}
+
+.skills-box {
+  position: realtive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 5.5rem 0 0;
+  padding: 2.5rem 0;
+  border: 1px solid #a0a0a0;
+  background-color: #000000;
+  color: whitesmoke;
+  border-radius: 1rem;
+  animation: skillsBoxFade 1.75s ease forwards;
+  opacity: 0;
+}
+
+.skills-title {
+  position: absolute;
+  color: black;
+  text-transform: uppercase;
+  border: 2px solid #a0a0a0;
+  background-color: #a0a0a0;
+  top: -3.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  padding: .5rem 1.65rem;
+  border-radius: .5rem .5rem 0 0;
+  animation: skillsBoxFade 2s ease forwards;
+  opacity: 0;
+}
+
+.skills-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.skills-separator {
+  height: 13.5rem;
+  width: 2px;
+  border-radius: 1rem;
+  background-color: #515152;
+}
+
+.skills-item {
+  height: 17.5rem;
+  width: 22.5rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.skills-item img {
+  height: 7.5rem;
+  width: 7.5rem;
+  transition: all .5s ease-in-out;
+}
+
+.skills-item img:hover {
+  transform: rotate(360deg) scale (1.15);
+}
+
