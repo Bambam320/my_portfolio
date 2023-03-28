@@ -305,3 +305,95 @@
   border-radius: .25rem;
 }
 
+.flatiron-text-box h3 {
+  align-self: center;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.flatiron-text-box h1 {
+  align-self: center;
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding-bottom: .25rem;
+}
+
+.flatiron-text-box h4 {
+  align-self: center;
+  font-size: 2.125rem;
+  padding-bottom: .75rem;
+}
+
+.flatiron-text-box p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  font-style: italic;
+}
+
+.flatiron-description-box ul {
+  padding: .5rem 0 1rem;
+  padding-left: 2.5rem;
+  font-size: 1.65rem;
+}
+
+.flatiron-description-box p {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* certificates */
+.cert-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  width: 90%;
+  gap: 2rem;
+}
+
+.cert-img-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #111;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
+  margin-left: 25rem;
+  opacity: 0;
+}
+
+#cert2-active, #cert3-active, #cert4-active {
+  animation: certItemSlide 3s ease forwards;
+}
+
+.cert-img-hover-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(50, 50, 50, .85);
+  opacity: 0;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.cert-img-hover-box h1 {
+  font-size: 1.85rem;
+  color: white;
+  padding-right: .75rem;
+}

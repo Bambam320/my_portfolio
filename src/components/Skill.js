@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import { useInView } from 'react-intersection-observer';
+
 import '../CSS/Skill.css';
 
 function Skill() {
@@ -85,39 +87,48 @@ function Skill() {
         <div className="skills-box">
           <h1 className="skills-title">Backend</h1>
           <div className="skills-content">
-              <div id="RubySkill" className="skills-item">
-                <img src={RubyImg} alt="Ruby" />
-                <h2>Ruby</h2>
-                <p>Ruby description</p>
-              </div>
-              <div id="RubySkill" className="skillSeparator"></div>
-              <div id="RailsSkill" className="skills-item">
-                <img src={RailsImg} alt="Rails" />
-                <h2>Rails</h2>
-                <p>Rails description</p>
-              </div>
-              <div id="RailsSkill" className="skillSeparator"></div>
-              <div id="PostgreSQLSkill" className="skills-item">
-                <img src={PostgreSQLImg} alt="PostgreSQL" />
-                <h2>PostgreSQL</h2>
-                <p>PostgreSQL description</p>
-              </div>
-              <div id="PostgreSQLSkill" className="skillSeparator hiddenSkillSeparator"></div>
-              <div id="SQLSkill" className="skills-item responsiveSkillsItem1">
-                <img src={SQLImg} alt="SQL" />
-                <h2>SQL</h2>
-                <p>SQL description</p>
-              </div>
-              <div id="VSCodeSkill" className="skillSeparator responsiveSkillsItem2"></div>
-              <div id="VSCodeSkill" className="skills-item responsiveSkillsItem3">
-                <img src={VSCodeImg} alt="VSCode" />
-                <h2>VSCode</h2>
-                <p>VSCode description</p>
-              </div>
+            <div id="RubySkill" className="skills-item">
+              <img src={RubyImg} alt="Ruby" />
+              <h2>Ruby</h2>
+              <p>Ruby description</p>
+            </div>
+            <div id="RubySkill" className="skillSeparator"></div>
+            <div id="RailsSkill" className="skills-item">
+              <img src={RailsImg} alt="Rails" />
+              <h2>Rails</h2>
+              <p>Rails description</p>
+            </div>
+            <div id="RailsSkill" className="skillSeparator"></div>
+            <div id="PostgreSQLSkill" className="skills-item">
+              <img src={PostgreSQLImg} alt="PostgreSQL" />
+              <h2>PostgreSQL</h2>
+              <p>PostgreSQL description</p>
+            </div>
+            <div id="PostgreSQLSkill" className="skillSeparator hiddenSkillSeparator"></div>
+            <div id="SQLSkill" className="skills-item responsiveSkillsItem1">
+              <img src={SQLImg} alt="SQL" />
+              <h2>SQL</h2>
+              <p>SQL description</p>
+            </div>
+            <div id="SQLSkill" className="skillSeparator responsiveSkillsItem2"></div>
+            <div id="VSCodeSkill" className="skills-item responsiveSkillsItem3">
+              <img src={VSCodeImg} alt="VSCode" />
+              <h2>VSCode</h2>
+              <p>VSCode description</p>
             </div>
           </div>
         </div>
       </div>
+
+      <div 
+        className="education-separator" 
+        ref={edSepRef} 
+        id={edSepInView ? "education-separator-active" : undefined}
+      ></div>
+      <div className="education-wrapper">
+        <h1 className="education-header" ref={edTitleRef}
+      </div>
+    </div>
   )
 }
 
