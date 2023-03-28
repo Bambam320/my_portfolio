@@ -128,3 +128,126 @@
   transform: rotate(360deg) scale (1.15);
 }
 
+.skills item h2 {
+  font-size: 2.65rem;
+  padding: 1.25rem 0 .65rem;
+}
+
+.skills-item p {
+  font-size: 1.34rem;
+  line-height: 1.4;
+}
+
+#ReactSkill {animation: skillsBoxFade 1s ease .75s forwards; opacity:0}
+#ReduxSkill {animation: skillsBoxFade 1s ease 1.25s forwards; opacity:0}
+#JavaScript {animation: skillsBoxFade 1s ease 1.75s forwards; opacity:0}
+#CSSSkill {animation: skillsBoxFade 1s ease 2.25s forwards; opacity:0}
+#HTMLSkill {animation: skillsBoxFade 1s ease 2.75s forwards; opacity:0}
+
+#RubySkill {animation: skillsBoxFade 1s ease .75s forwards; opacity:0}
+#RailsSkill {animation: skillsBoxFade 1s ease 1.25s forwards; opacity:0}
+#PostgreSQLSkill {animation: skillsBoxFade 1s ease 1.75s forwards; opacity:0}
+#SQLSkill {animation: skillsBoxFade 1s ease 2.25s forwards; opacity:0}
+#VSCodeSkill {animation: skillsBoxFade 1s ease 2.75s forwards; opacity:0}
+
+.education-separator {
+  width: 0;
+  height: 1px;
+  box-shadow: rgba(15, 15, 15, .65) 0px 2px 4px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255), rgba(255, 255, 255, 0));
+  opacity: .8;
+  border-radius: 1rem;
+  margin: 7.5rem 0 5rem;
+}
+
+@keyframes lineAcross {
+  100% {width: 90%}
+}
+
+#education-separator-active {
+  animation: lineAcross 4s ease forwards; 
+}
+
+.education-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.education-header {
+  position: relative;
+  color: white;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: -5rem;
+  opacity: 0;
+}
+
+.education-header span {
+  display: inline-block;
+  transition: color .35s ease;
+}
+
+.education-header span:hover {
+  color: #08fdd8;
+  animation: contactBounce 1s ease forwards;
+}
+
+#certTitle-active {
+  animation: skilsHeadFade 2s ease forwards;
+}
+
+/* Flatiron Cert */
+.flatiron-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: flex-start;
+  margin-top: 2.5rem;
+  width: 100%;
+  height: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.325) 4px 4px 2px;
+  margin-left: 25rem;
+  opacity: 0;
+}
+
+@keyframes certItemSlide {
+  100% {opacity: 1; margin-left: 0}
+}
+
+#cert1-active {
+  animation: certItemSlide 2s ease forwards;
+}
+
+.flatiron-img-wrapper {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 42.5rem;
+}
+.flatiron-images {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: .25rem 0 0 .25rem;
+}
+.flatiron-img {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 42.5rem;
+  border-radius: .25rem 0 0 .25rem;
+  transition: opacity .5s ease-in-out;
+}
+#flatiron-pointer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2.25rem;
+  color: whitesmoke;
+  opacity: 1;
+  transition: all .25s ease;
+}
