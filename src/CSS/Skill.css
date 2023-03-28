@@ -228,12 +228,14 @@
   height: 100%;
   width: 42.5rem;
 }
+
 .flatiron-images {
   position: relative;
   height: 100%;
   width: 100%;
   border-radius: .25rem 0 0 .25rem;
 }
+
 .flatiron-img {
   position: absolute;
   left: 0;
@@ -242,6 +244,7 @@
   border-radius: .25rem 0 0 .25rem;
   transition: opacity .5s ease-in-out;
 }
+
 #flatiron-pointer {
   position: absolute;
   top: 1rem;
@@ -251,3 +254,54 @@
   opacity: 1;
   transition: all .25s ease;
 }
+
+#flatiron-pointer-gone {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2.25rem;
+  color: whitesmoke;
+  opacity: 0;
+  transition: all .25s ease;
+}
+
+.flatiron-img-hover-box {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  height: 100%;
+  width: 42.5rem;
+  background-color: rgba(50, 50, 50, .85);
+  opacity: 0;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+
+.flatiron-img-hover-box h1 {
+  position: absolute;
+  font-size: 2.5rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity .5s ease-in-out;
+}
+
+.flatiron-img-hover-box:hover {
+  opacity: 1;
+}
+
+.flatiron-text-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: calc(100% - 42.5rem);
+  padding: 0 2.5rem;
+  background-color: #111;
+  border-radius: .25rem;
+}
+
