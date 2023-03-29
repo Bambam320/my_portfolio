@@ -397,3 +397,94 @@
   color: white;
   padding-right: .75rem;
 }
+
+#cert-arrow {
+  font-size: 1.75rem;
+  color: white;
+}
+
+.cert-img-hover-box:hover {
+  opacity: 1;
+}
+
+.cert-img {
+  height: 20rem;
+  width: auto;
+  border-radius: .5rem 0 0 .5rem;
+}
+
+#cert-pointer {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2.25rem;
+  color: whitesmoke;
+  opacity: 1;
+  transition: all .25s ease;
+}
+
+#cert-pointer-gone {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 2.25rem;
+  color: whitesmoke;
+  opacity: 0;
+  transition: all .25s ease;
+}
+
+.cert-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.cert-title {
+  font-size: 3.25rem;
+  font-weight: 500;
+  margin-bottom: 1.65rem;
+}
+
+.cert-text-box p {
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.25rem;
+  width: 90%;
+}
+
+.cert-text-box p a {
+  color: #08fdd8;
+  text-decoration: underline;
+}
+
+.note-wrapper {
+  margin: 5rem 0 0;
+  width: 90%;
+}
+
+.note-wrapper p {
+  position: relative;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #bbb;
+}
+
+.note-wrapper p span {
+  position: absolute;
+  top: -1rem;
+  left: -2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  text-justify: auto;
+  color: #08fdd8;
+  font-size: 2.5rem;
+  font-weight: 400;
+  animation: flickerNote 2s ease infinite;
+}
+
