@@ -187,7 +187,7 @@ function Skill() {
                         <li>Learned proper ways to tackle complex problems</li>
                       </ul>
                     </div>
-                    <p>I spent 16 weeks full time & in-person at Flatiron School during which I actively improved my skills with 500+ hours of live coding experience.</p>
+                    <p>Interactice and immersive course in both the Front end and Back end technologies needed to create powerful full stack applications.</p>
                   </div>
                 </div>
 
