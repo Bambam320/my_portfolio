@@ -10,6 +10,16 @@ function Blog() {
   const [blog5, setBlog5] = useState(false)
   const [blog6, setBlog6] = useState(false)
 
+  const setBlogsToFalse = (blogId) => {
+    // add state in an array format to hit true for the blog being set
+    setBlog1(false)
+    setBlog2(false)
+    setBlog3(false)
+    setBlog4(false)
+    setBlog5(false)
+    setBlog6(false)
+
+  }
 
   return (
     <div className="blogs-container">
