@@ -6,6 +6,7 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .blog-header {
   position: relative;
   color: white;
@@ -16,26 +17,32 @@
   margin-bottom: -3.5rem;
   opacity: 0;
 }
+
 .blog-header span {
   display: inline-block;
   transition: color .35s ease;
 }
+
 .blog-header span:hover {
   color: #08fdd8;
   animation: contactBounce 1s ease forwards
 }
+
 @keyframes blogDesc {
   100% {opacity: 1}
 }
+
 .blog-description {
   margin-top: 3rem;
   font-size: 1.85rem;
   opacity: 0;
   animation: blogDesc 1.75s ease 1.5s forwards;
 }
+
 @keyframes blogWrapUp {
   100% {opacity: 1; margin-top: 5rem}
 }
+
 .blog-wrapper {
   margin-top: 2.5rem;
   width: 90%;
@@ -49,12 +56,63 @@
   margin-top: 7.5rem;
   animation: blogWrapUp 1s ease .75s forwards;
 }
+
 .blog-wrapper input[type=radio] {
   display: none;
 }
+
 .blog-cards {
   position: relative;
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
+}
+
+.blog-card {
+  position: absolute;
+  width: 70rem;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.5s ease;
+  border-radius: 1rem;
+}
+
+#blog-item-1:checked ~ .blog-cards #blog-slide-3, #blog-item-2:checked ~ .blog-cards #blog-slide-1, #blog-item-3:checked ~ .blog-cards #blog-slide-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.35;
+  z-index: 0;
+}
+
+#blog-item-1:checked ~ .blog-cards #blog-slide-2, #blog-item-2:checked ~ .blog-cards #blog-slide-3, #blog-item-3:checked ~ .blog-cards #blog-slide-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.35;
+  z-index: 1;
+}
+
+#blog-item-1:checked ~ .blog-cards #blog-slide-1, #blog-item-2:checked ~ .blog-cards #blog-slide-2, #blog-item-3:checked ~ .blog-cards #blog-slide-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+
+.blog-content {
+  height: 100%;
+  width: 100%;
+}
+
+.blog-image {
+  width: 100%;
+  height: 25rem;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover;
+}
+
+.blog-text-content {
+  height: 21.5rem;
+  border-bottom: 1px solid gray;
+  color: black;
+  background-color: #08fdd8;
+  padding: 1rem 2rem;
 }
