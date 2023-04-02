@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import pdfIcon from '../Media/Images/PDFIcon.jpg';
-import googleDocIcon from '../Media/Images/GoogleDocIcon.jpg';
+import pdfIcon from '../Media/Images/pdfIcon.jpg';
+import googleDocIcon from '../Media/Images/googleDocsIcon.png';
 
 import '../CSS/AboutMe.css';
 

@@ -120,7 +120,7 @@ function Skill() {
         </div>
       </div>
 
-      {/* <div
+      <div
         className="education-separator"
         ref={edSepRef}
         id={edSepInView ? "education-separator-active" : undefined}
@@ -192,7 +192,7 @@ function Skill() {
                 </div>
 
               </div>
-            </div> */}
+            </div>
             )
 }
 export default Skill;
