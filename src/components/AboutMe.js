@@ -2,12 +2,12 @@ import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import pdfIcon from '../Media/Images/pdfIcon.jpg';
-import googleDocIcon from '../Media/Images/googleDocsIcon.png';
+import googleDocsIcon from '../Media/Images/googleDocsIcon.png';
 
 import '../CSS/AboutMe.css';
 
 function AboutMe() {
-  const navigate = useNavigate()
+  const navigate = useNavigate()  
 
   return (
     <div className="about-container">
@@ -90,7 +90,7 @@ function AboutMe() {
                 >
                   <img 
                     className='about-resume-pdf'
-                    src={PDF_Icon}
+                    src={pdfIcon}
                     alt="Resume_PDF"
                   />
               </a>
@@ -101,7 +101,7 @@ function AboutMe() {
               >
                 <img
                   className='about-resume-googleDocs'
-                  src={GoogleDocs-Icon}
+                  src={googleDocsIcon}
                   alt="Resume_GoogleDocs"
                 />
               </a>
