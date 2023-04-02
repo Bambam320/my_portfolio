@@ -121,78 +121,70 @@ function Skill() {
       </div>
 
       <div
-        className="education-separator"
-        ref={edSepRef}
-        id={edSepInView ? "education-separator-active" : undefined}
-      ></div>
+        className="education-separator" ref={edSepRef} id={edSepInView ? "education-separator-active" : undefined}></div>
       <div className="education-wrapper">
-        <h1
-          className="education-header"
-          ref={edTitleRef}
-          id={edTitle - active ? "certTitle-active" : undefined}
-        >   <div className="education-separator" ref={edSepRef} id={edSepInView ? "education-separator-active" : undefined}></div>
-            <div className="education-wrapper">
-              <h1 className="education-header" ref={edTitleRef} id={edTitleInView ? "certTitle-active" : undefined}>
-                <span>E</span>
-                <span>d</span>
-                <span>u</span>
-                <span>c</span>
-                <span>a</span>
-                <span>t</span>
-                <span>i</span>
-                <span>o</span>
-                <span>n</span>&nbsp;
-                <span>a</span>
-                <span>n</span>
-                <span>d</span>&nbsp;
-                <span>C</span>
-                <span>e</span>
-                <span>r</span>
-                <span>t</span>
-                <span>i</span>
-                <span>f</span>
-                <span>i</span>
-                <span>c</span>
-                <span>a</span>
-                <span>t</span>
-                <span>i</span>
-                <span>o</span>
-                <span>n</span>
-                <span>s</span>
-              </h1>
-              <div className="cert-items">
-                <div className="flatiron-item" ref={ed1Ref} id={ed1InView ? "cert1-active" : undefined} onMouseEnter={() => setMouse1(true)} onMouseLeave={() => setMouse1(false)}>
-                  <div className="flatiron-img-wrapper" onMouseEnter={() => setMouse1(false)} onMouseLeave={() => setMouse1(true)} onClick={() => setCert(!cert)}>
-                    <div className="flatiron-images">
-                      <img className="flatiron-img" src={FlatironImg} alt="Flatiron" style={cert ? { opacity: "0" } : { opacity: "1" }} />
-                      <img className="flatiron-img" src={FlatironCert} alt="Flatiron" style={cert ? { opacity: "1" } : { opacity: "0" }} />
-                    </div>
-                    <GiClick id={mouse1 ? "flatiron-pointer" : "flatiron-pointer-gone"} />
-                    <div className="flatiron-img-hover-box">
-                      <h1 style={cert ? { opacity: "1" } : { opacity: "0" }}>Click to hide certificate</h1>
-                      <h1 style={cert ? { opacity: "0" } : { opacity: "1" }}>Click to view certificate</h1>
-                    </div>
-                  </div>
-                  <div className="flatiron-text-box">
-                    <h3>NYC, New York</h3>
-                    <h1>Software Engineering</h1>
-                    <h4>FLATIRON SCHOOL</h4>
-                    <p>A highly acknowledged Software Engineering trade school and proven leader in tech education.</p>
-                    <div className="flatiron-description-box">
-                      <p>Some things I did as a student:</p>
-                      <ul>
-                        <li>Studied coding best practices</li>
-                        <li>Collaborated on projects as a team</li>
-                        <li>Engaged in pair programming with my peers</li>
-                        <li>Learned proper ways to tackle complex problems</li>
-                      </ul>
-                    </div>
-                    <p>Interactice and immersive course in both the Front end and Back end technologies needed to create powerful full stack applications.</p>
-                  </div>
-                </div>
-
+        <h1 className="education-header" ref={edTitleRef} id={edTitleInView ? "certTitle-active" : undefined}>
+          <span>E</span>
+          <span>d</span>
+          <span>u</span>
+          <span>c</span>
+          <span>a</span>
+          <span>t</span>
+          <span>i</span>
+          <span>o</span>
+          <span>n</span>&nbsp;
+          <span>a</span>
+          <span>n</span>
+          <span>d</span>&nbsp;
+          <span>C</span>
+          <span>e</span>
+          <span>r</span>
+          <span>t</span>
+          <span>i</span>
+          <span>f</span>
+          <span>i</span>
+          <span>c</span>
+          <span>a</span>
+          <span>t</span>
+          <span>i</span>
+          <span>o</span>
+          <span>n</span>
+          <span>s</span>
+        </h1>
+        <div className="cert-items">
+          <div className="flatiron-item" ref={ed1Ref} id={ed1InView ? "cert1-active" : undefined} onMouseEnter={() => setMouse1(true)} onMouseLeave={() => setMouse1(false)}>
+            <div className="flatiron-img-wrapper" onMouseEnter={() => setMouse1(false)} onMouseLeave={() => setMouse1(true)} onClick={() => setCert(!cert)}>
+              <div className="flatiron-images">
+                <img className="flatiron-img" src={FlatironImg} alt="Flatiron" style={cert ? { opacity: "0" } : { opacity: "1" }} />
+                <img className="flatiron-img" src={FlatironCert} alt="Flatiron" style={cert ? { opacity: "1" } : { opacity: "0" }} />
+              </div>
+              <GiClick id={mouse1 ? "flatiron-pointer" : "flatiron-pointer-gone"} />
+              <div className="flatiron-img-hover-box">
+                <h1 style={cert ? { opacity: "1" } : { opacity: "0" }}>Click to hide certificate</h1>
+                <h1 style={cert ? { opacity: "0" } : { opacity: "1" }}>Click to view certificate</h1>
               </div>
             </div>
-            )
+            <div className="flatiron-text-box">
+              <h3>NYC, New York</h3>
+              <h1>Software Engineering</h1>
+              <h4>FLATIRON SCHOOL</h4>
+              <p>A highly acknowledged Software Engineering trade school and proven leader in tech education.</p>
+              <div className="flatiron-description-box">
+                <p>Some things I did as a student:</p>
+                <ul>
+                  <li>Studied coding best practices</li>
+                  <li>Collaborated on projects as a team</li>
+                  <li>Engaged in pair programming with my peers</li>
+                  <li>Learned proper ways to tackle complex problems</li>
+                </ul>
+              </div>
+              <p>Interactice and immersive course in both the Front end and Back end technologies needed to create powerful full stack applications.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  )
 }
 export default Skill;

@@ -7,6 +7,8 @@ import googleDocIcon from '../Media/Images/googleDocsIcon.png';
 import '../CSS/AboutMe.css';
 
 function AboutMe() {
+  const navigate = useNavigate()
+
   return (
     <div className="about-container">
       <div className="about-left-box">
