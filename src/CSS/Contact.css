@@ -567,3 +567,112 @@
       margin-left: 0;
   }
 }
+
+/* Formatting for 650px */
+@media (max-width: 650px) {
+  .contact-title {
+      font-size: 5rem;
+  }
+  .contact-left-box {
+      width: 95%;
+  }
+  .contact-right-box {
+      width: 95%;
+      height: 45rem;
+  }
+  .map-popup {
+      top: 1.8rem;
+      right: 1.8rem;
+  }
+  .contact-message {
+      font-size: 1.6rem;
+      width: 100%;
+      padding-left: 1%;
+  }
+  #contact-copy-email {
+      font-size: 1.675rem;
+  }
+}
+
+/* Formatting for 480px */
+@media (max-width: 480px) {
+  .contact-container {
+      padding: 3rem 0 3rem 0;
+  }
+  .contact-title {
+      font-size: 4.5rem;
+      line-height: 2;
+  }
+  .contact-message {
+      font-size: 1.5rem;
+  }
+  .map-popup {
+      top: 1rem;
+      right: 1rem;
+      font-size: 12.5px;
+      padding: 14px;
+  }
+  #contact-half-left {
+      float: none;
+      width: 100%;
+  }
+  #contact-half-right {
+      float: none;
+      width: 100%;
+  }
+  .contact-left-box {
+      width: 95%;
+      padding-bottom: .5rem;
+      margin-bottom: 3rem;
+  }
+  .contact-form {
+      padding-top: 2.85rem;
+  }
+  .contact-aside {
+      position: relative;
+      margin-top: 10rem;
+      max-width: 100%;
+  }
+  .contact-form button {
+      float: none;
+      font-size: 14px;
+      letter-spacing: 4px;
+      height: 50px;
+      width: 210px;
+  }
+  .contact-copy-box {
+      gap: .6rem;
+      margin-top: .75rem;
+  }
+  #contact-copy-top {
+      font-size: 1.9rem;
+  }
+  #contact-copy-email {
+      font-size: 1.8rem;
+      color: #bbb;
+  }
+  #contact-copy-icon {
+      font-size: 2.4rem;
+  }
+  .contactForm6 {
+      margin: 0 auto;
+  }
+  .contactForm7 {
+      margin-left: 20%;
+      margin-top: 2.75rem;
+  }
+  .contact-copy-wrap {
+      position: relative;
+      width: fit-content;
+  }
+  .contact-popup {
+      font-size: 1.25rem;
+      bottom: -1.5rem;
+      left: -1rem;
+  }
+  @keyframes copyPopup {
+      50% {opacity: 1}
+      75% {opacity: 1}
+      100% {opacity: 0; bottom: -2.5rem;}
+  }
+}
