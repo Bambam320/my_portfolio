@@ -399,3 +399,86 @@
       margin-left: 3.5%;
   }
 }
+
+/* Formatting for 1300px */ 
+@media (max-width: 1300px) {
+  .contact-left-box {
+      width: 50.5%;
+  }
+  .contact-right-box {
+      width: 42%;
+  }
+  .contact-title {
+      font-size: 6rem;
+      padding-left: 3.5%;
+  }
+  .contact-form {
+      margin-left: 3.25%;
+  }
+  .contact-message {
+      width: 92.5%;
+      padding-left: 3.75%;
+      font-size: 1.65rem;
+  }
+  .contact-copy-box {
+      gap: .5rem;
+  }
+  #contact-copy-top {
+      font-size: 1.8rem;
+  }
+  #contact-copy-email {
+      font-size: 1.75rem;
+  }
+  #contact-copy-icon {
+      font-size: 2.5rem;
+  }
+}
+
+/* Formatting for 1250px */ 
+@media (max-width: 1250px) {
+  .contact-container {
+      padding: 3.5rem 0 3.5rem 16.5rem;
+  }
+  .contact-title {
+      line-height: 1.85;
+      width: 93.5%;
+      padding-left: 4%;
+  }
+  .contact-message {
+      width: 97%;
+      font-size: 1.625rem;
+      padding-left: 4%;
+  }
+  .contact-form {
+      width: 93.5%;
+      margin-left: 4%;
+      padding-top: 3.75rem;
+  }
+  .contact-aside {
+      margin-left: 4%;
+  }
+}
+
+/* Formatting for 1150px */
+@media (max-width: 1150px) {
+  .contact-message {
+      font-size: 1.55rem;
+  }
+  #contact-copy-top {
+      font-size: 1.75rem;
+  }
+  #contact-copy-email {
+      font-size: 1.75rem;
+  }
+  #contact-copy-icon {
+      font-size: 2.5rem;
+  }
+  .contact-form button {
+      font-size: 13px;
+      height: 46px;
+      width: 185px;
+  }
+  .contact-aside {
+      max-width: 52.5%;
+  }
+}
