@@ -36,15 +36,15 @@
   to {transform: scale3d(1, 1, 1)}
 }
 
-#cLetter_c1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s}
-#cLetter_o {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s}
-#cLetter_n {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s}
-#cLetter_t1 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s}
-#cLetter_a {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s}
-#cLetter_c2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .6s}
-#cLetter_t2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .7s}
-#cLetter_m {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .8s}
-#cLetter_e {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .9s}
+#contact-C {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .1s}
+#contact-O {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .2s}
+#contact-N {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .3s}
+#contact-T {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .4s}
+#contact-A {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .5s}
+#contact-Cx2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .6s}
+#contact-Tx2 {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .7s}
+#contact-M {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .8s}
+#contact-E {opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: .9s}
 
 .contact-message {
   display: block;
@@ -674,5 +674,26 @@
       50% {opacity: 1}
       75% {opacity: 1}
       100% {opacity: 0; bottom: -2.5rem;}
+  }
+}
+
+/* Formatting for 400px */
+@media (max-width: 400px) {
+  .contactForm7 {
+      margin-left: 16.5%;
+  }
+}
+
+/* Formatting for 380px */
+@media (max-width: 380px) {
+  .contactForm7 {
+      margin-left: 15%;
+  }
+}
+
+/* Formatting for 360px */
+@media (max-width: 360px) {
+  .contactForm7 {
+      margin-left: 12.5%;
   }
 }
