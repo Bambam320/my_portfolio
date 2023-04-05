@@ -1,0 +1,32 @@
+.work-container {
+  padding: 3.5rem 0 3.5rem 18.5rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.port-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+@keyframes portFade {
+  100% {opacity: 1}
+}
+
+.port-header {
+  position: relative;
+  color: white;
+  font-size: 6.25rem;
+  font-weight: 600;
+  animation: skilsHeadFade 2s ease forwards;
+  margin-top: 3.5rem;
+  margin-bottom: -3.5rem;
+  opacity: 0;
+}
