@@ -20,6 +20,27 @@ function Contact() {
         <p className="contact-message contactForm1">
           I would be happy to connect and collaborate on open source projects, technical problem solving practice or just to chat!
         </p>
+        <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
+          <ul>
+            <li className='contact-item contactForm2' id='contact-half-left'>
+              <input type="text" placeholder='Name' name="from_name"/>
+              <span className="contact-after"></span>
+            </li>
+            <li className='contact-item contactForm3' id='contact-half-right'>
+              <input type="email" placeholder='Email*' name="from_email" required/>
+              <span className="contact-after"></span>
+            </li>
+            <li className='contact-item contactForm4' id='contact-subject'>
+              <input id='contact-third-child' type="text" placeholder='Subject' name="subject"/>
+              <span className="contact-after"></span>
+            </li>
+            <li className='contact-item contactForm5'>
+              <textarea placeholder='Message*' name="message" required/>
+              <span className="contact-after"></span>
+            </li>
+          </ul>
+          <button className='contactForm6' type="submit">Send message!</button>
+        </form>
       </div>
     </div>
   )
