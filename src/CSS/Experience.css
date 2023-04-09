@@ -139,3 +139,57 @@
 .port-gif-box:hover .portGifPopup {
   bottom: 0;
 }
+
+#portItem1 {animation: portAnimItem 1s ease 1s forwards}
+#portItem1 .port-gif-box {animation: portAnimBox 1s ease 1s forwards}
+#portItem1 .port-gif-wrapper {animation: portAnimWrap 1s ease 1s forwards}
+#portItem1 .portGifPopup {animation: portAnimPop 1s ease 3s forwards}
+#portItem2 {animation: portAnimItem 1s ease 1.5s forwards}
+#portItem2 .port-gif-box {animation: portAnimBox 1s ease 1.5s forwards}
+#portItem2 .port-gif-wrapper {animation: portAnimWrap 1s ease 1.5s forwards}
+#portItem2 .portGifPopup {animation: portAnimPop 1s ease 3.5s forwards}
+#portItem3 {animation: portAnimItem 1s ease 2s forwards}
+#portItem3 .port-gif-box {animation: portAnimBox 1s ease 2s forwards}
+#portItem3 .port-gif-wrapper {animation: portAnimWrap 1s ease 2s forwards}
+#portItem3 .portGifPopup {animation: portAnimPop 1s ease 4s forwards}
+#portItem4 {animation: portAnimItem 1s ease 2.5s forwards}
+#portItem4 .port-gif-box {animation: portAnimBox 1s ease 2.5s forwards}
+#portItem4 .port-gif-wrapper {animation: portAnimWrap 1s ease 2.5s forwards}
+#portItem4 .portGifPopup {animation: portAnimPop 1s ease 4.5s forwards}
+
+@keyframes portAnimItem {
+    60% {transform: scale(.9)}
+    100% {width: 100%; transform: scale(1)}
+}
+
+@keyframes portAnimBox {
+    100% {width: 48.5rem}
+}
+
+@keyframes portAnimWrap {
+    80% {opacity: 0}
+    100% {width: 48.5rem; opacity: 1}
+}
+
+@keyframes portAnimPop {
+    100% {opacity: 1}
+}
+
+.portGifPopup {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    padding: 1.25rem 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    opacity: 0;
+}
