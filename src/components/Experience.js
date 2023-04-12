@@ -1,7 +1,7 @@
 import React from 'react'
 
 import '../CSS/Experience.css';
-
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 
 function Experience() {
 
@@ -44,6 +44,22 @@ function Experience() {
           <span>code&nbsp;</span>
           <span>walkthrough.&nbsp;</span>
         </p>
+        <div className="port-items">
+          <div className="port-item" id='portItem1' onMouseEnter={() => setPort1(true)} onMouseLeave={() => setPort1(false)}>
+            <div className="port-gif-box">
+              <div className="port-gif-wrapper">
+                <img className='port-gif' src={Add Fakeify Gif} alt="Fakeify Gif" style={port1 ? {opacity: "1"} : {opacity: "0"}}/>
+                <img className='port-gif port-gif-logo' src={Add Fakeify Logo} alt="Fakeify Logo" style={port1 ? {opacity: "0"} : {opacity: "1"}}/>
+              </div>
+              <a href='Add render hosted link' target="_blank" rel="noreferrer">
+                <div className="portGifPopup">
+                  <p>Go to site</p>
+                  <BsBoxArrowUpRight id='goToSitePort'/>
+                </div>
+              </a>
+            </div>
+          </div> 
+        </div>
       </div>
     </div>
   )
