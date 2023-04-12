@@ -26,6 +26,24 @@ function Experience() {
           <span>i</span>
           <span>o</span>
         </h1>
+        <p className="port-description">
+          <span>The&nbsp;</span>
+          <span>largest&nbsp;</span>
+          <span>projects&nbsp;</span>
+          <span>I've&nbsp;</span>
+          <span>created&nbsp;</span>
+          <span>most&nbsp;</span>
+          <span>recently.&nbsp;</span>
+          <span>Feel&nbsp;</span>
+          <span>free&nbsp;</span>
+          <span>to&nbsp;</span>
+          <span onClick={() => navigate('/contact')}>reach</span>
+          <span>&nbsp;out&nbsp;</span>
+          <span>for&nbsp;</span>
+          <span>a&nbsp;</span>
+          <span>code&nbsp;</span>
+          <span>walkthrough.&nbsp;</span>
+        </p>
       </div>
     </div>
   )
