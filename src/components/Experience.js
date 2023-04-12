@@ -58,6 +58,17 @@ function Experience() {
                 </div>
               </a>
             </div>
+            <div className="port-text-box">
+              <h1 className="port-title">Fakeify<span>&trade;</span></h1>
+              <a className="port-title-site" href='render website for fakeify' target="_blank" rel="noreferrer">www.Fakeify.com</a>
+              <p className="port-headline">A spotify clone website that allows users to save songs to their linked Spotify account!</p>
+              <div className="port-btn-box">
+                  <div className='port-btn-more' onClick={() => handleOpenModal(1)}>
+                      <span id='port-more-text'>More Details</span>
+                      <BsArrowRight id='port-more-arrow'/>
+                  </div>
+              </div>
+          </div>
           </div> 
         </div>
       </div>
