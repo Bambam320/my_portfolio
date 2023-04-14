@@ -54,3 +54,80 @@
   margin-left: -340px;
   animation: slidein 2.5s ease 1.5s forwards;
 }
+
+@keyframes showup {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes slidein {
+  0% {margin-left: -800px}
+  50% {margin-left: -800px}
+  100% {margin-left: 0px}
+}
+
+@keyframes reveal {
+  0% {opacity: 0; width: 0px}
+  50% {opacity: 1; width: 0px}
+  100% {width: 260px}
+}
+
+.tech-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  width: 85%;
+  gap: 4.5rem;
+  margin-top: 3.85rem;
+}
+
+.tech-item {
+  padding: 0 1rem;
+  width: 54rem;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+  margin-top: 10rem;
+  margin-bottom: -10rem;
+  opacity: 0;
+}
+
+@keyframes algoFadeUp {
+  100% {opacity: 1; margin-top: 0; margin-bottom: 0}
+}
+
+.tech-item1 {animation: algoFadeUp 1.25s ease .5s forwards}
+.tech-item2 {animation: algoFadeUp 1.25s ease .75s forwards}
+.tech-item3 {animation: algoFadeUp 1.25s ease 1s forwards}
+.tech-item4 {animation: algoFadeUp 1.25s ease 1.25s forwards}
+
+#techJavascript::before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+  transition: all .7s ease;
+  background-color: orange
+}
+
+#techRuby::before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+  transition: all .7s ease;
+  background-color: #FD2155
+}
+
+#techJavascriptRuby::before {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+  transition: all .7s ease;
+  background: linear-gradient(to right,orange, #FD2155);
+}
