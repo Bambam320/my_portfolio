@@ -93,14 +93,14 @@
   opacity: 0;
 }
 
-@keyframes algoFadeUp {
+@keyframes techFadeUp {
   100% {opacity: 1; margin-top: 0; margin-bottom: 0}
 }
 
-.tech-item1 {animation: algoFadeUp 1.25s ease .5s forwards}
-.tech-item2 {animation: algoFadeUp 1.25s ease .75s forwards}
-.tech-item3 {animation: algoFadeUp 1.25s ease 1s forwards}
-.tech-item4 {animation: algoFadeUp 1.25s ease 1.25s forwards}
+.tech-item1 {animation: techFadeUp 1.25s ease .5s forwards}
+.tech-item2 {animation: techFadeUp 1.25s ease .75s forwards}
+.tech-item3 {animation: techFadeUp 1.25s ease 1s forwards}
+.tech-item4 {animation: techFadeUp 1.25s ease 1.25s forwards}
 
 #techJavascript::before {
   content: "";
@@ -193,15 +193,95 @@
 
 /* Formatting for 1400px  */
 @media (max-width: 1400px) {
-  .algo-wrapper {
+  .tech-wrapper {
       width: 90%;
       gap: 4rem;
   }
-  .algo-item {
+  .tech-item {
       width: 52rem;
   }
-  .algo-iframe-wrapper {
+  .tech-iframe-wrapper {
       width: 50rem;
       height: 30rem;
+  }
+}
+
+/* Formatting for 1350px */
+@media (max-width: 1350px) {
+  .tech-wrapper {
+      width: 90%;
+      gap: 4rem;
+  }
+  .tech-item {
+      width: 48rem;
+  }
+  .tech-iframe-wrapper {
+      width: 46rem;
+      height: 28.5rem;
+  }
+}
+
+/* Formatting for 1250px */
+@media (max-width: 1250px) {
+  .tech-container {
+      padding: 3.5rem 0 3.5rem 16.5rem;
+  }
+  .tech-wrapper {
+      width: 95%;
+      gap: 3rem;
+  }
+  .tech-item {
+      width: 44rem;
+  }
+  .tech-iframe-wrapper {
+      width: 42rem;
+      height: 25.5rem;
+  }
+}
+
+/* Formatting for 1100px */
+@media (max-width: 1100px) {
+  .tech-header {
+      font-size: 5.75rem;
+  }
+  .tech-container {
+      padding: 3.5rem 0 3.5rem 0;
+  }
+  .tech-wrapper {
+      width: 95%;
+      gap: 3rem;
+  }
+  .tech-item {
+      width: 40rem;
+  }
+  .tech-iframe-wrapper {
+      width: 38rem;
+      height: 21.5rem;
+  }
+}
+
+/* Formatting for 950px */
+@media (max-width: 950px) {
+  .tech-header {
+      font-size: 5rem;
+  }
+  .tech-description {
+      margin-top: 2.25rem;
+      font-size: 1.65rem;
+  }
+  .tech-container {
+      padding: 2rem 0 2rem 0;
+  }
+  .tech-wrapper {
+      width: 95%;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      gap: 2rem;
+      margin-top: 3rem;
+  }
+  @keyframes reveal {
+      0% {opacity: 0; width: 0px}
+      50% {opacity: 1; width: 0px}
+      100% {width: 225px}
   }
 }
