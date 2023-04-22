@@ -21,10 +21,17 @@ function Technical() {
         <span>e</span>
         <span>s</span>&nbsp
         <span>&</span>&nbsp
-        <span>t</span>
-        <span>u</span>
+        <span>A</span>
+        <span>l</span>
         <span>r</span>
-        <span>e</span>
+        <span>g</span>
+        <span>o</span>
+        <span>r</span>
+        <span>i</span>
+        <span>t</span>
+        <span>h</span>
+        <span>m</span>
+        <span>s</span>
       </h1>
       <div id='techJavascriptRuby' className="tech-item tech-item3">
         <div className="tech-title-box">
