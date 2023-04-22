@@ -4,8 +4,8 @@ import '../CSS/Technical.css';
 
 function Technical() {
   return (
-    <>
-      <h1 className="algo-header">
+    <div className='tech-container'>
+      <h1 className="tech-header">
         <span>D</span>
         <span>a</span>
         <span>t</span>
@@ -67,7 +67,7 @@ function Technical() {
             ></iframe>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
