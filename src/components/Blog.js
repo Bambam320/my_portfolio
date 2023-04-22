@@ -27,7 +27,8 @@ function Blog() {
         <span>B</span>
         <span>l</span>
         <span>o</span>
-        <span>g</span>&nbsp
+        <span>g</span>
+        <span>s</span>&nbsp
         <span>P</span>
         <span>o</span>
         <span>s</span>

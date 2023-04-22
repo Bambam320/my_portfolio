@@ -5,7 +5,27 @@ import '../CSS/Technical.css';
 function Technical() {
   return (
     <>
-      <div>Technical</div>
+      <h1 className="algo-header">
+        <span>D</span>
+        <span>a</span>
+        <span>t</span>
+        <span>a</span>&nbsp
+        <span>S</span>
+        <span>t</span>
+        <span>r</span>
+        <span>u</span>
+        <span>c</span>
+        <span>t</span>
+        <span>u</span>
+        <span>r</span>
+        <span>e</span>
+        <span>s</span>&nbsp
+        <span>&</span>&nbsp
+        <span>t</span>
+        <span>u</span>
+        <span>r</span>
+        <span>e</span>
+      </h1>
       <div id='techJavascriptRuby' className="tech-item tech-item3">
         <div className="tech-title-box">
             <p>Javascript <span>&</span> <span>Ruby</span></p>
