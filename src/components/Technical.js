@@ -67,6 +67,23 @@ function Technical() {
             ></iframe>
         </div>
       </div>
+      <div id='techJavascript' className="tech-item tech-item4">
+        <div className="tech-title-box">
+            <p>Javascript</p>
+            <p>1 Min</p>
+        </div>
+        <div className="tech-iframe-wrapper">
+            <iframe 
+                width="560" 
+                height="315" 
+                src="video for array problem"
+                title="title"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture"
+                allowFullScreen="allowfullscreen"
+            ></iframe>
+        </div>
+      </div>
     </div>
   )
 }
