@@ -84,6 +84,23 @@ function Technical() {
             ></iframe>
         </div>
       </div>
+      <div id='techJavascriptRuby' className="tech-item tech-item3">
+        <div className="tech-title-box">
+            <p>Javascript <span>&</span> <span>Ruby</span></p>
+            <p>add time length</p>
+        </div>
+        <div className="tech-iframe-wrapper">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="youtube for calc problem"
+            title="calculator"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture" // research these allowances
+            allowFullScreen="allowfullscreen"
+            ></iframe>
+        </div>
+      </div>
     </div>
   )
 }
