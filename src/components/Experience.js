@@ -95,6 +95,31 @@ function Experience() {
               </div>
             </div>
           </div>
+          <div className="port-item" id='portItem3' onMouseEnter={() => setPort3(true)} onMouseLeave={() => setPort3(false)}>
+            <div className="port-gif-box">
+              <div className="port-gif-wrapper">
+                <img className='port-gif' src={DnD Battle Arena} alt="DnD Battle Arena Gif" style={port2 ? {opacity: "1"} : {opacity: "0"}}/>
+                <img className='port-gif port-gif-logo' src={DnD Battle ArenaLogo} alt="DnD Battle ArenaLogo" style={port2 ? {opacity: "0"} : {opacity: "1"}}/>
+              </div>
+              <a href='DnD Battle Arena hosted link' target="_blank" rel="noreferrer">
+                <div className="portGifPopup">
+                  <p>Go to site</p>
+                  <BsBoxArrowUpRight id='goToSitePort'/>
+                </div>
+              </a>
+            </div>
+            <div className="port-text-box">
+              <h1 className="port-title">DnD Battle Arena<span>&trade;</span></h1>
+              <a className="port-title-site" href='DnD Battle Arena hosted link' target="_blank" rel="noreferrer">www.DnD Battle Arena.com</a>
+              <p className="port-headline">Create DnD characters and let them battle.</p>
+              <div className="port-btn-box">
+                <div className='port-btn-more' onClick={() => handleOpenModal(2)}>
+                  <span id='port-more-text'>More Details</span>
+                  <BsArrowRight id='port-more-arrow'/>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
