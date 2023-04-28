@@ -35,6 +35,33 @@ function Blog() {
         <span>t</span>
         <span>s</span>
       </h1>
+      <p className="blog-description">Blogs I've written about interesting topics.</p>
+      <div className="blog-wrapper">
+        <input type="radio" name="slider" id="blog-item-1" defaultChecked/>
+        <input type="radio" name="slider" id="blog-item-2"/>
+        <input type="radio" name="slider" id="blog-item-3"/>
+        <div className="blog-cards">
+          <label style={blog1 ? {cursor: 'inherit'} : {cursor: "pointer"}} className="blog-card" htmlFor="blog-item-1" id="blog-slide-1" onClick={() => handleBlog1()}>
+            <div className="blog-content">
+              <img className='blog-image' src={ReactBanner} alt="React Banner" />
+              <div className="blog-text-content">
+                <h1 className='blog-title'><a style={blog1 ? null : {pointerEvents: "none"}} href='url of blog' target="_blank" rel="noreferrer">Name of blog</a></h1>
+                <div className="blog-start-wrap">
+                  <p className='blog-start'> Start blog summary<span id='blogStartResponsive'> End blog summary</span>...&nbsp; <a style={blog1 ? null : {pointerEvents: "none"}} href='URL of blog' target="_blank" rel="noreferrer">Read More</a></p>
+                </div>
+              </div>
+              <div className="blog-facts">
+                <h4 className="blog-date">Date</h4>
+                <h2 className="blog-read">Length of reading time</h2>
+                <div className="blog-likes">
+                  <img src={MediumClap} alt="Claps" />
+                  <p>Add like count here</p>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
   )
 }
