@@ -79,13 +79,32 @@ function Blog() {
               </div>
             </div>
           </label>
-          <label style={blog2 ? {cursor: 'inherit'} : {cursor: "pointer"}} className="blog-card" htmlFor="blog-item-3" id="blog-slide-3" onClick={() => handleBlog3()}>
+          <label style={blog3 ? {cursor: 'inherit'} : {cursor: "pointer"}} className="blog-card" htmlFor="blog-item-3" id="blog-slide-3" onClick={() => handleBlog3()}>
             <div className="blog-content">
               <img className='blog-image' src={image here} alt="Image Here" />
               <div className="blog-text-content">
                 <h1 className='blog-title'><a style={blog3 ? null : {pointerEvents: "none"}} href='url of blog' target="_blank" rel="noreferrer">Name of blog</a></h1>
                 <div className="blog-start-wrap">
                   <p className='blog-start'> Start blog summary<span id='blogStartResponsive'> End blog summary</span>...&nbsp; <a style={blog3 ? null : {pointerEvents: "none"}} href='URL of blog' target="_blank" rel="noreferrer">Read More</a></p>
+                </div>
+              </div>
+              <div className="blog-facts">
+                <h4 className="blog-date">Date</h4>
+                <h2 className="blog-read">Length of reading time</h2>
+                <div className="blog-likes">
+                  <img src={MediumClap} alt="Claps" />
+                  <p>Add like count here</p>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label style={blog4 ? {cursor: 'inherit'} : {cursor: "pointer"}} className="blog-card" htmlFor="blog-item-4" id="blog-slide-4" onClick={() => handleBlog4()}>
+            <div className="blog-content">
+              <img className='blog-image' src={image here} alt="Image Here" />
+              <div className="blog-text-content">
+                <h1 className='blog-title'><a style={blog4 ? null : {pointerEvents: "none"}} href='url of blog' target="_blank" rel="noreferrer">Name of blog</a></h1>
+                <div className="blog-start-wrap">
+                  <p className='blog-start'> Start blog summary<span id='blogStartResponsive'> End blog summary</span>...&nbsp; <a style={blog4 ? null : {pointerEvents: "none"}} href='URL of blog' target="_blank" rel="noreferrer">Read More</a></p>
                 </div>
               </div>
               <div className="blog-facts">
