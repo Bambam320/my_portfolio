@@ -193,6 +193,25 @@ function Blog() {
               </div>
             </div>
           </label>
+          <label style={blog9 ? {cursor: 'inherit'} : {cursor: "pointer"}} className="blog-card" htmlFor="blog-item-9" id="blog-slide-9" onClick={() => handleBlog9()}>
+            <div className="blog-content">
+              <img className='blog-image' src={image here} alt="Image Here" />
+              <div className="blog-text-content">
+                <h1 className='blog-title'><a style={blog9 ? null : {pointerEvents: "none"}} href='url of blog' target="_blank" rel="noreferrer">Name of blog</a></h1>
+                <div className="blog-start-wrap">
+                  <p className='blog-start'> Start blog summary<span id='blogStartResponsive'> End blog summary</span>...&nbsp; <a style={blog9 ? null : {pointerEvents: "none"}} href='URL of blog' target="_blank" rel="noreferrer">Read More</a></p>
+                </div>
+              </div>
+              <div className="blog-facts">
+                <h4 className="blog-date">Date</h4>
+                <h2 className="blog-read">Length of reading time</h2>
+                <div className="blog-likes">
+                  <img src={MediumClap} alt="Claps" />
+                  <p>Add like count here</p>
+                </div>
+              </div>
+            </div>
+          </label>
         </div>
       </div>
     </div>
