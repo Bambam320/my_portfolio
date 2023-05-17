@@ -526,7 +526,7 @@
 }
 
 /* Formatting for 480px */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .port-header {
       font-size: 4.5rem;
   }
@@ -581,7 +581,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
   }
-}
+} */
 
 /* Formatting for 360px */
 @media (max-width: 360px) {
