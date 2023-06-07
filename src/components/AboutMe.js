@@ -9,6 +9,18 @@ import '../CSS/AboutMe.css';
 function AboutMe() {
   const navigate = useNavigate()  
 
+  // add a specific about me section, talk about how i got into code, where I used it when it clicked, why im technology oriented and what I love
+  // about continuing in software development
+  // This “About Me” section wouldn’t work for anyone else (well, unless they were willing to
+  //   make up a big lie about their history!), and that’s the point. It’s true to who I am, and shares
+  //   a compelling window into my personality and experience.
+  //potentially add an anecdote or some keywords that interest the candidate enough to continue reading through it fully and remain in their memory
+
+  //juliacodes.com is a good resource for creating project templates for the description
+
+  //make a day mode and night mode for browsing, colors are kind of silly
+
+  // include an easter egg in the console, maybe just 42
   return (
     <div className="about-container">
       <div className="about-left-box">
