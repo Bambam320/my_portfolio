@@ -32,12 +32,12 @@ function Navbar() {
         <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
       </p>
       <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
-        <div className="navbar-top">
+        <div className="navbar-left">
           <img src={emblem} alt="IM" onClick={() => handleLogoClick} />
           <h2> Igor Mestechkin </h2>
           <p> Full Stack Developer </p>
         </div>
-        <ul className="nav-menu">
+        <ul className="nav-links">
           <li className="nav-item">
             <NavLink
               to="/"
@@ -66,9 +66,9 @@ function Navbar() {
               className="nav-link"
               activeClassName="active"
             >
-              <hi>
+              <h1>
                 Skills
-              </hi>
+              </h1>
             </NavLink>
           </li>
           <li className="nav-item">

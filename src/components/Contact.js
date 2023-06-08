@@ -1,5 +1,5 @@
 import React from 'react'
-
+// import formRef from
 import '../CSS/Blog.css';
 
 function Contact() {
@@ -20,7 +20,8 @@ function Contact() {
         <p className="contact-message contactForm1">
           I would be happy to connect and collaborate on open source projects, technical problem solving practice or just to chat!
         </p>
-        <form className="contact-form" ref={formRef} onSubmit={sendEmail}>
+        {/* <form className="contact-form" ref={formRef} onSubmit={sendEmail}> */}
+        <form>
           <ul>
             <li className='contact-item contactForm2' id='contact-half-left'>
               <input type="text" placeholder='Name' name="from_name"/>
