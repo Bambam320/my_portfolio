@@ -6,7 +6,7 @@
   position: fixed;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   background-color: hsla(140, 100%, 92%, 1);
   height: 20rem;
@@ -36,16 +36,16 @@
   cursor: pointer;
 }
 
-.navbar-top h1 {
+.navbar-left h2 {
   margin-top: 1rem;
   font-size: 2.35rem;
-  color: #f2f2f2;
+  color: hsla(253, 88%, 44%, 0.895);
 }
 
-.navbar-top p {
+.navbar-left p {
   margin-top: 1rem;
   font-size: 1.25rem;
-  color: #f2f2f2;
+  color: hsla(253, 88%, 44%, 0.895);
 }
 
 .nav-links {
@@ -56,7 +56,7 @@
   list-style: none;
   text-align: center;
   height: 100%;
-  width: 100%;
+  width: 50%;
 }
 
 .nav-link { 
@@ -65,7 +65,7 @@
 }
 
 .nav-link h1 {
-  border-top: 1px solid #6e3aae
+  border-top: 4px solid #6e3aae
 }
 
 .nav-link h1 {
@@ -86,9 +86,9 @@
 
 .nav-item {
   position: relative;
-  font-size: .75rem;
+  font-size: .70rem;
   margin: 0 1rem;
-  line-height: 3.5rem;
+  line-height: 1.5rem;
   width: 100%;
 }
 
