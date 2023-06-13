@@ -8,6 +8,8 @@ function Navbar() {
   const navigate = useNavigate()
   const [navActive, setNavActive] = useState(false)
   
+  // set different default font for links
+
   useEffect(() => {
     let style = document.body.style
     navActive ? 
@@ -17,6 +19,7 @@ function Navbar() {
   }, [navActive])
 
   const handleLogoClick = () => {
+    console.log("logo clicked")
     navigate('/contact')
     deactivateNav()
   }
@@ -33,9 +36,9 @@ function Navbar() {
       </p>
       <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
         <div className="navbar-left">
-          <img src={emblem} alt="IM" onClick={() => handleLogoClick} />
-          <h2> Igor Mestechkin </h2>
-          <p> Full Stack Developer </p>
+          <img src={emblem} alt="IM" onClick={handleLogoClick} />
+          {/* <h2> Igor Mestechkin </h2>
+          <p> Full Stack Developer </p> */}
         </div>
         <ul className="nav-links">
           <li className="nav-item">
@@ -116,7 +119,7 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <div className="navbar-bottom">
+        <div className="navbar-right">
           <a href="https://www.linkedin.com/in/igor-mestechkin-519a97109/" target="_blank" rel="noopener noreferrer" >
             <BsLinkedin className='nav-icon' />
           </a>
