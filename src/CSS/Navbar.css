@@ -103,7 +103,8 @@
 }
 
 .nav-link:active h1{
-  /* transform: scale(1.5); */
+  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
+  transform: scale(1.5);
 }
 
 .nav-item {
@@ -129,8 +130,15 @@
   /* background-color: #6e3aae; */
 }
 
+/* 
+on hover: border and lit text 
+on click: scale down a bit
+on active/clicked: lit text
+*/
+
 .nav-item .active {
   color: #6e3aae;
+  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
   transform: scale(1.3);
 }
 
