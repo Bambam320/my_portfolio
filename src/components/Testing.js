@@ -6,32 +6,29 @@ function Testing() {
     e.preventDefault()
     const size = 6;
     const start = [2, 2];
-    const possibleMoves = [[2, 1],[2, -1],[1, 2],[1, -2],[-1, 2],[-1, -2],[-2, 1],[-2, -1]];
+    const options = [[2, 1],[2, -1],[1, 2],[1, -2],[-1, 2],[-1, -2],[-2, 1],[-2, -1]];
     let board = Array.from({length: size}, () => Array.from({length: size}, () => -1));
     const isValid = ([x, y]) => board[x] && board[x][y] === -1;
     
-    const getValidMoves = ([x, y]) => {
-      const moves = [];
-      for (const [moveX, moveY] of possibleMoves) {
-        const toX = x + moveX;
-        const toY = y + moveY;
-        if (isValid([toX, toY])) {
-          moves.push([toX, toY]);
-        };
-      };
+    const validOptions = ([x, y]) => {
+      let moves = [];
+      options.forEach(([corX, corY]) => {
+        const nextX = corX + x, nextY = corY + y;
+        return isValid([nextX, nextY]) ? moves.push([nextX, nextY]) : null 
+      })
       return moves;
     };
     
     const solve = ([x, y], moveNumber = 0) => {
       board[x][y] = moveNumber;
       if (moveNumber + 1 === size * size) return true;
-      const sortedMoves = getValidMoves([x, y]).sort((a, b) => getValidMoves(a).length - getValidMoves(b).length);
-      const notSorted = getValidMoves([x, y])
-      console.log("not sorted", notSorted)
-      console.log("sorted moves", sortedMoves)
+      const sortedMoves = validOptions([x, y]).sort((a, b) => validOptions(a).length - validOptions(b).length);
+      console.log("sortedMoves", sortedMoves)
       for (const [toX, toY] of sortedMoves) {
         if (solve([toX, toY], moveNumber + 1)) {
-          return true;
+          return board.map((row, corX) => {
+            return row.map((pos, corY) => )
+          });
         }
         board[toX][toY] = -1;
       }
