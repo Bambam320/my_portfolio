@@ -20,15 +20,14 @@ function Testing() {
     };
     
     const solve = ([x, y], moveNumber = 0) => {
-      board[x][y] = moveNumber;
+      board[x][y] = [moveNumber, x, y];
+      let path = [];
       if (moveNumber + 1 === size * size) return true;
       const sortedMoves = validOptions([x, y]).sort((a, b) => validOptions(a).length - validOptions(b).length);
-      console.log("sortedMoves", sortedMoves)
+      console.log('sorted', sortedMoves)
       for (const [toX, toY] of sortedMoves) {
         if (solve([toX, toY], moveNumber + 1)) {
-          return board.map((row, corX) => {
-            return row.map((pos, corY) => )
-          });
+          return board;
         }
         board[toX][toY] = -1;
       }
