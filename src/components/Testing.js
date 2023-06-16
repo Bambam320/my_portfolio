@@ -4,80 +4,137 @@ function Testing() {
 
   function handleTest(e) {
     e.preventDefault()
-
-    let N = 20
-    // A utility function to check if i,j are
-    // valid indexes for N*N chessboard 
-    function isSafe(x, y, sol) {
-      return (x >= 0 && x < N && y >= 0 && y < N && sol[x][y] == -1);
-    }
-    // This function solves the Knight Tour problem
-    // using Backtracking.  This  function mainly
-    // uses solveKTUtil() to solve the problem. It
-    // returns false if no complete tour is possible,
-    // otherwise return true and prints the tour.
-    // Please note that there may be more than one
-    // solutions, this function prints one of the
-    // feasible solutions.  
-    function solveKT() {
-      let sol = new Array(N);
-      for (var i = 0; i < sol.length; i++) {
-        sol[i] = new Array(2);
-      }
-
-      // Initialization of solution matrix 
-      for (let x = 0; x < N; x++) {
-        for (let y = 0; y < N; y++) {
-          sol[x][y] = -1;
-        }
-      }
-
-      // xMove[] and yMove[] define next move of Knight.
-      // xMove[] is for next value of x coordinate
-      // yMove[] is for next value of y coordinate 
-      let xMove = [2, 1, -1, -2, -2, -1, 1, 2];
-      let yMove = [1, 2, 2, 1, -1, -2, -2, -1];
-
-      // Since the Knight is initially at the first block
-      sol[0][0] = 0;
-
-      // Start from 0,0 and explore all tours using
-      // solveKTUtil() 
-      if (!solveKTUtil(0, 0, 1, sol, xMove, yMove)) {
-        console.log("Solution does not exist");
-        return false;
-      } else {
-        console.log(sol);
-      }
-      return true;
-    }
-
-    // A recursive utility function to solve Knight
-    // Tour problem 
-    function solveKTUtil(x, y, movei, sol, xMove, yMove) {
-      let k, next_x, next_y;
-      if (movei == N * N) {
-        return true;
-      }
-      // Try all next moves from the 
-      // current coordinate x, y 
-      for (k = 0; k < 8; k++) {
-        next_x = x + xMove[k];
-        next_y = y + yMove[k];
-        if (isSafe(next_x, next_y, sol)) {
-          sol[next_x][next_y] = movei;
-          if (solveKTUtil(next_x, next_y, movei + 1, sol, xMove, yMove)) {
-            return true;
-          } else {
-            sol[next_x][next_y] = -1; // backtracking
-          };
+    const size = 6;
+    const start = [2, 2];
+    const possibleMoves = [[2, 1],[2, -1],[1, 2],[1, -2],[-1, 2],[-1, -2],[-2, 1],[-2, -1]];
+    let board = Array.from({length: size}, () => Array.from({length: size}, () => -1));
+    const isValid = ([x, y]) => board[x] && board[x][y] === -1;
+    
+    const getValidMoves = ([x, y]) => {
+      const moves = [];
+      for (const [moveX, moveY] of possibleMoves) {
+        const toX = x + moveX;
+        const toY = y + moveY;
+        if (isValid([toX, toY])) {
+          moves.push([toX, toY]);
         };
       };
+      return moves;
+    };
+    
+    const solve = ([x, y], moveNumber = 0) => {
+      board[x][y] = moveNumber;
+      if (moveNumber + 1 === size * size) return true;
+      const sortedMoves = getValidMoves([x, y]).sort((a, b) => getValidMoves(a).length - getValidMoves(b).length);
+      const notSorted = getValidMoves([x, y])
+      console.log("not sorted", notSorted)
+      console.log("sorted moves", sortedMoves)
+      for (const [toX, toY] of sortedMoves) {
+        if (solve([toX, toY], moveNumber + 1)) {
+          return true;
+        }
+        board[toX][toY] = -1;
+      }
       return false;
     };
 
-    // Function Call
-    solveKT();
+    console.log(solve([start[0], start[1]]))
+    
+    // let successes = 0;
+    // let failures = 0;
+    // for (let startX = 0; startX < size; startX++) {
+    //   for (let startY = 0; startY < size; startY++) {
+    //     resetBoard();
+    //     const success = solve([startX, startY]);
+    //     if (success) {
+    //       successes = successes + 1;
+    //     } else {
+    //       failures = failures + 1;
+    //     }
+    //     renderBoard(board);
+    //   }
+    // }
+    
+    // console.log("Successes", successes);
+    // console.log("Failures", failures);
+
+
+
+    // let N = 5
+    // // A utility function to check if i,j are
+    // // valid indexes for N*N chessboard 
+    // function isSafe(x, y, sol) {
+    //   return (x >= 0 && x < N && y >= 0 && y < N && sol[x][y] == -1);
+    // }
+    // // This function solves the Knight Tour problem
+    // // using Backtracking.  This  function mainly
+    // // uses solveKTUtil() to solve the problem. It
+    // // returns false if no complete tour is possible,
+    // // otherwise return true and prints the tour.
+    // // Please note that there may be more than one
+    // // solutions, this function prints one of the
+    // // feasible solutions.  
+    // function solveKT() {
+    //   let sol = new Array(N);
+    //   for (var i = 0; i < sol.length; i++) {
+    //     sol[i] = new Array(2);
+    //   }
+    //   console.log('solvekt')
+
+    //   // Initialization of solution matrix 
+    //   for (let x = 0; x < N; x++) {
+    //     for (let y = 0; y < N; y++) {
+    //       sol[x][y] = -1;
+    //     }
+    //   }
+
+    //   // xMove[] and yMove[] define next move of Knight.
+    //   // xMove[] is for next value of x coordinate
+    //   // yMove[] is for next value of y coordinate 
+    //   let xMove = [2, 1, -1, -2, -2, -1, 1, 2];
+    //   let yMove = [1, 2, 2, 1, -1, -2, -2, -1];
+
+    //   // Since the Knight is initially at the first block
+    //   sol[0][0] = 0;
+
+    //   // start from 0,0 and explore all tours using
+    //   // solveKTUtil() 
+    //   if (!solveKTUtil(0, 0, 1, sol, xMove, yMove)) {
+    //     console.log("Solution does not exist");
+    //     return false;
+    //   } else {
+    //     console.log(sol);
+    //   }
+    //   return true;
+    // }
+
+    // // A recursive utility function to solve Knight
+    // // Tour problem 
+    // function solveKTUtil(x, y, movei, sol, xMove, yMove) {
+    //   console.log('solveutil')
+    //   let k, next_x, next_y;
+    //   if (movei == N * N) {
+    //     return true;
+    //   }
+    //   // Try all next moves from the 
+    //   // current coordinate x, y 
+    //   for (k = 0; k < 8; k++) {
+    //     next_x = x + xMove[k];
+    //     next_y = y + yMove[k];
+    //     if (isSafe(next_x, next_y, sol)) {
+    //       sol[next_x][next_y] = movei;
+    //       if (solveKTUtil(next_x, next_y, movei + 1, sol, xMove, yMove)) {
+    //         return true;
+    //       } else {
+    //         sol[next_x][next_y] = -1; // backtracking
+    //       };
+    //     };
+    //   };
+    //   return false;
+    // };
+
+    // // Function Call
+    // solveKT();
 
 
     // console.log(knights_tour([ 0, 0 ], 6))
@@ -114,8 +171,9 @@ function Testing() {
     // 	return pathTracker(start[0], start[1], 1, path, options) ? path : [];
     // };
   }
+
   return (
-    <button style={{ width: '100px', height: '40px' }} onClick={handleTest}>test</button>
+    <button style={{ width: '100px', height: '40px', fontSize: '2rem' }} onClick={handleTest}>test</button>
   )
 }
 
