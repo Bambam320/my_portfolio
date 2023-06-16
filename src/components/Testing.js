@@ -8,6 +8,7 @@ function Testing() {
     const start = [2, 2];
     const options = [[2, 1],[2, -1],[1, 2],[1, -2],[-1, 2],[-1, -2],[-2, 1],[-2, -1]];
     let board = Array.from({length: size}, () => Array.from({length: size}, () => -1));
+    let path = Array.from({length: size * size - 1}, () => null);
     const isValid = ([x, y]) => board[x] && board[x][y] === -1;
     
     const validOptions = ([x, y]) => {
@@ -20,16 +21,19 @@ function Testing() {
     };
     
     const solve = ([x, y], moveNumber = 0) => {
-      board[x][y] = [moveNumber, x, y];
-      let path = [];
+      board[x][y] = moveNumber;
+      // path[x][y] = [x, y]; // update path with current coordinates
       if (moveNumber + 1 === size * size) return true;
       const sortedMoves = validOptions([x, y]).sort((a, b) => validOptions(a).length - validOptions(b).length);
-      console.log('sorted', sortedMoves)
       for (const [toX, toY] of sortedMoves) {
         if (solve([toX, toY], moveNumber + 1)) {
-          return board;
+          // board[toX][toY] = moveNumber + 1; // update board with next move number
+          path[x][y] = [toX, toY]; // update path with next coordinates
+          // console.log(path)
+          return {board, path};
         }
         board[toX][toY] = -1;
+        path[toX][toY] = null; // reset path for next move
       }
       return false;
     };
