@@ -10,7 +10,7 @@
   flex-direction: row;
   background-color: hsla(140, 100%, 92%, 1);
   height: 20rem;
-  width: 100%;
+  width: 1000px;
   top: 0;
   left: 0;
   z-index: 50;
@@ -116,6 +116,7 @@
 }
 
 .nav-item::after {
+  color: inherit;
   /* content: "";
   position: absolute;
   right: 0;
@@ -126,6 +127,7 @@
 }
 
 .nav-item:hover::after {
+  color: inherit;
   /* height: 100%; */
   /* background-color: #6e3aae; */
 }
@@ -161,7 +163,7 @@ on active/clicked: lit text
 }
 
 /* Formatting for 1250px */
-@media (max-width: 1250px) {
+@media (max-width: 900px) {
   .navbar-container {
     width: 16.5rem;
   }
