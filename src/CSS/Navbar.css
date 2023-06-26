@@ -104,7 +104,7 @@
 
 .nav-link:active h1{
   border-top: 8px solid hsla(253, 88%, 44%, 0.895);
-  transform: scale(1.5);
+  transform: scale(1.0);
 }
 
 .nav-item {
