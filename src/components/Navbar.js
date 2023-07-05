@@ -123,7 +123,7 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
-        <div className="navbar-right">
+        {/* <div className="navbar-right">
           <a href="https://www.linkedin.com/in/igor-mestechkin-519a97109/" target="_blank" rel="noopener noreferrer" >
             <BsLinkedin className='nav-icon' />
           </a>
@@ -133,7 +133,7 @@ function Navbar() {
           <a href="https://medium.com/@igor.mestechkin" target="_blank" rel="noopener noreferrer">
             <BsMedium className='nav-icon' />
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   )
