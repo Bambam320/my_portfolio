@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, NavLink } from 'react-router-dom';
 import { BsMedium, BsLinkedin, BsGithub } from 'react-icons/bs';
-import emblem from '../Media/Images/Emblem.jpg';
+import emblem from '../Media/Images/Emblem.png';
 import "../CSS/Navbar.css";
 import Testing from './Testing';
 
@@ -48,6 +48,7 @@ function Navbar() {
             <NavLink
               to="/"
               className="nav-link"
+              id="first-nav-link"
               activeClassName="active"
             >
               <h1>

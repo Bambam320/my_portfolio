@@ -91,11 +91,15 @@
   text-decoration: none;
 }
 
+#first-nav-link h1{
+  border-left: 2px solid hsla(253, 88%, 44%, 0.895);
+}
+
 .nav-link h1 {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 800;
   line-height: 2.85;
-  border-top: 4px solid hsla(253, 88%, 44%, 0.895);
+  border-right: 2px solid hsla(253, 88%, 44%, 0.895);
   /* transition: transform .1s ease; */
 }
 
