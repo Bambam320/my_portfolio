@@ -10,7 +10,7 @@
   flex-direction: row;
   background-color: hsla(140, 100%, 92%, 1);
   height: 20rem;
-  width: 1000px;
+  width: 100%;
   top: 0;
   left: 0;
   z-index: 50;
@@ -22,6 +22,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
+  width: 20%;
   padding: 2rem 0;
 }
 
@@ -149,6 +150,7 @@ on active/clicked: lit text
   flex-direction: column;
   display: flex;
   gap: 2rem;
+  width: 5%;
 }
 
 .nav-icon {
@@ -163,7 +165,7 @@ on active/clicked: lit text
 }
 
 /* Formatting for 1250px */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .navbar-container {
     width: 16.5rem;
   }
