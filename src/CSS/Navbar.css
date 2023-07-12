@@ -95,6 +95,7 @@
   border-left: 2px solid hsla(253, 88%, 44%, 0.895);
 }
 
+// add the clip path wash style from module 9 here
 .nav-link h1 {
   font-size: 2rem;
   font-weight: 800;
