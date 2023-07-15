@@ -84,8 +84,6 @@
   text-align: center;
   height: 100%;
   width: 60%;
-  border-right: 2px solid hsla(253, 88%, 44%, 0.895);
-  border-left: 2px solid hsla(253, 88%, 44%, 0.895);
 }
 
 #first-nav-link h1{
@@ -102,7 +100,6 @@
   font-size: 2rem;
   font-weight: 800;
   line-height: 2.85;
-
   /* transition: transform .1s ease; */
 }
 
@@ -115,12 +112,16 @@
   transform: scale(1.0);
 }
 
+//display lines between .nav-links
+//get links to read on sameline
 .nav-item {
   position: relative;
   font-size: .70rem;
   margin: 0 1rem;
   line-height: 1.5rem;
   width: 100%;
+  border-right: 2px solid hsla(253, 88%, 44%, 0.895);
+  border-left: 2px solid hsla(253, 88%, 44%, 0.895);
 }
 
 .nav-item::after {
