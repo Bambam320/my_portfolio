@@ -44,11 +44,10 @@ function Navbar() {
           <p> Full Stack Developer </p> */}
         </div>
         <ul className="nav-links">
-          <li className="nav-item">
+          <li className="nav-item" id="first-nav-item">
             <NavLink
               to="/"
               className="nav-link"
-              id="first-nav-link"
               activeClassName="active"
             >
               <h1>
@@ -63,7 +62,7 @@ function Navbar() {
               activeClassName="active"
             >
               <h1>
-                About Me
+                About
               </h1>
             </NavLink>
           </li>

@@ -9,7 +9,7 @@
   justify-content: space-around;
   flex-direction: row;
   background-color: hsla(140, 100%, 92%, 1);
-  height: 20rem;
+  height: 18rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -84,44 +84,24 @@
   text-align: center;
   height: 100%;
   width: 60%;
+
 }
 
-#first-nav-link h1{
+#first-nav-item {
   border-left: 2px solid hsla(253, 88%, 44%, 0.895);
 }
 
-.nav-link { 
-  color: hsla(151, 81%, 25%, 0.895);
-  text-decoration: none;
-}
-
-
-.nav-link h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.85;
-  /* transition: transform .1s ease; */
-}
-
-.nav-link:hover {
-  color: hsla(253, 88%, 44%, 0.895);
-}
-
-.nav-link:active h1{
-  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
-  transform: scale(1.0);
-}
-
-//display lines between .nav-links
-//get links to read on sameline
 .nav-item {
-  position: relative;
+  /* position: relative; */
   font-size: .70rem;
-  margin: 0 1rem;
-  line-height: 1.5rem;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0 1rem; */
   border-right: 2px solid hsla(253, 88%, 44%, 0.895);
-  border-left: 2px solid hsla(253, 88%, 44%, 0.895);
+  line-height: 1.5rem;
+  width: 150px;
+  height: 100%;
 }
 
 .nav-item::after {
@@ -141,17 +121,44 @@
   /* background-color: #6e3aae; */
 }
 
+.nav-item .active {
+  color: #6e3aae;
+  transform: scale(1.2);
+}
+
+.nav-link { 
+  color: hsla(151, 81%, 25%, 0.895);
+  text-decoration: none;
+}
+
+
+.nav-link h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0 6px;
+  /* transition: transform .1s ease; */
+}
+
+.nav-link:hover {
+  color: hsla(253, 88%, 44%, 0.895);
+  border-bottom: 3px solid hsla(253, 88%, 44%, 0.895);
+}
+//research link active vs hover  and after to finish nav links and move on to home page
+.nav-link:active h1{
+  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
+  transform: scale(1.0);
+}
+
+
 /* 
 on hover: border and lit text 
 on click: scale down a bit
 on active/clicked: lit text
 */
 
-.nav-item .active {
-  color: #6e3aae;
-  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
-  transform: scale(1.3);
-}
 
 .navbar-right {
   margin: 2rem 0 5rem;
