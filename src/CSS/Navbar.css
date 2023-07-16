@@ -228,7 +228,7 @@ on active/clicked: lit text
     height: 5px;
     border-radius: 2px;
   }
-  /* .navbar-line:nth-child(2).navActive {
+  .navbar-line:nth-child(2).navActive {
     opacity: 0
   }
   .navbar-line:nth-child(3).navActive {
@@ -241,7 +241,7 @@ on active/clicked: lit text
     display: none;
     opacity: 0;
     width: 100%;
-  } */
+  }
   .navbar-continer.navActive {
     display: flex;
     animation: navDafeBack .25s ease forwards;
