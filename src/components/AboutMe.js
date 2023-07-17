@@ -106,11 +106,11 @@ function AboutMe() {
                     alt="Resume_PDF"
                   />
               </a>
-              <a
+              {/* <a
                 href=""
                 target="_blank"
                 rel="noreferrer"
-              >
+              > */}
                 <img
                   className='about-resume-googleDocs'
                   src={googleDocsIcon}

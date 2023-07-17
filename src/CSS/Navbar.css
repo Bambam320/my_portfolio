@@ -103,7 +103,7 @@
   width: 150px;
   height: 100%;
 }
-
+/* transform the background to purple and text to white when highlighting, maybe to green while highlighting */
 .nav-item::after {
   color: inherit;
   /* content: "";
