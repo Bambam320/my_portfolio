@@ -8,7 +8,7 @@
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: row;
-  background-color: hsla(140, 100%, 92%, 1);
+  background-color: hsla(114, 100%, 90%,.85);
   height: 18rem;
   width: 100%;
   top: 0;
@@ -84,7 +84,6 @@
   text-align: center;
   height: 100%;
   width: 60%;
-
 }
 
 #first-nav-item {
@@ -92,20 +91,16 @@
 }
 
 .nav-item {
-  /* position: relative; */
   font-size: .70rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* margin: 0 1rem; */
   border-right: 2px solid hsla(253, 88%, 44%, 0.895);
   line-height: 1.5rem;
   width: 150px;
   height: 100%;
+  color: hsla(151, 81%, 25%, 0.895);
 }
-/* transform the background to purple and text to white when highlighting, maybe to green while highlighting */
+
 .nav-item::after {
-  color: inherit;
+  /* color: inherit; */
   /* content: "";
   position: absolute;
   right: 0;
@@ -114,23 +109,29 @@
   width: .2rem;
   background-color: transparent; */
 }
-
-.nav-item:hover::after {
-  color: inherit;
+ 
+.nav-item:hover {
+  border-bottom: 5px solid hsla(253, 88%, 44%, 0.895);
+  color: hsla(253, 88%, 44%, 0.895);
   /* height: 100%; */
   /* background-color: #6e3aae; */
 }
 
+/* put a flipping word here every now and then and maybe a border */
 .nav-item .active {
-  color: #6e3aae;
-  transform: scale(1.2);
+  color: hsla(253, 88%, 44%, 0.895);
+  transform: scale(1.3);
 }
 
 .nav-link { 
-  color: hsla(151, 81%, 25%, 0.895);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
   text-decoration: none;
+  height: 100%;
+  width: 100%;
 }
-
 
 .nav-link h1 {
   font-size: 2rem;
@@ -139,33 +140,16 @@
   display: flex;
   justify-content: center;
   padding: 0 6px;
-  /* transition: transform .1s ease; */
 }
-
-.nav-link:hover {
-  color: hsla(253, 88%, 44%, 0.895);
-  border-bottom: 3px solid hsla(253, 88%, 44%, 0.895);
-}
-//research link active vs hover  and after to finish nav links and move on to home page
-.nav-link:active h1{
-  border-top: 8px solid hsla(253, 88%, 44%, 0.895);
-  transform: scale(1.0);
-}
-
-
-/* 
-on hover: border and lit text 
-on click: scale down a bit
-on active/clicked: lit text
-*/
-
 
 .navbar-right {
-  margin: 2rem 0 5rem;
+  /* margin: 2rem 0 5rem; */
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   display: flex;
   gap: 2rem;
+  height: 100%;
   width: 5%;
 }
 
@@ -179,6 +163,10 @@ on active/clicked: lit text
   color: hsl(258, 53%, 37%);
   transition: scale(10);
 }
+
+
+
+
 
 /* Formatting for 1250px */
 @media (max-width: 600px) {

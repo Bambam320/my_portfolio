@@ -5,7 +5,6 @@ import AboutMe from "./AboutMe";
 import Blog from "./Blog";
 import Contact from "./Contact";
 import Experience from "./Experience";
-import Home from "./Home";
 import Navbar from "./Navbar";
 import Skill from "./Skill";
 import Technical from "./Technical";
@@ -15,8 +14,7 @@ function App() {
     <>
     <Navbar />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/" element={<AboutMe />} />
       <Route path="/skill" element={<Skill />} />
       <Route path="/experience" element={<Experience />} />
       <Route path="/technical" element={<Technical />} />

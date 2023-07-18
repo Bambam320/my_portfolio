@@ -40,24 +40,11 @@ function Navbar() {
       <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
         <div className="navbar-left">
           <img src={emblem} alt="IM" onClick={handleLogoClick} />
-          {/* <h2> Igor Mestechkin </h2>
-          <p> Full Stack Developer </p> */}
         </div>
         <ul className="nav-links">
           <li className="nav-item" id="first-nav-item">
             <NavLink
               to="/"
-              className="nav-link"
-              activeClassName="active"
-            >
-              <h1>
-                Home
-              </h1>
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/aboutme"
               className="nav-link"
               activeClassName="active"
             >

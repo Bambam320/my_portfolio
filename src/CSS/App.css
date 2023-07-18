@@ -17,6 +17,7 @@
 */
 html, body {
   height: 100%;
+  background-color: hsla(140, 100%, 92%, 1);
 }
 
 /*
