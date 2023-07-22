@@ -14,6 +14,27 @@
   padding-left: 2rem;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
+
+/* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.box2 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+  grid-row-end: 5;
+} */
+
 .about-left-title {
   /* position: relative; */
   font-size: 3.25rem;
@@ -30,17 +51,17 @@
   color: #f2f2f2
 }
 
-/* include rotating and translating*/
+/* start so they flip forward and to their place and backward to their place // alternating*/
 @keyframes aboutLettering {
-  from {transform: scale3d(1,1,1); opacity: 0;}
-  20% {transform: scale3d(1.5, .5, 1); opacity: .2;}
-  30% {transform: scale3d(.5, 1.5, 1); opacity: .3;}
-  40% {transform: scale3d(1.3, .7, 1); opacity: .4;}
-  50% {transform: scale3d(.7, 1.3, 1); opacity: .5;}
-  60% {transform: scale3d(1.15, .85, 1); opacity: .6;}
-  70% {transform: scale3d(.85, 1.15, 1); opacity: .7;}
-  80% {transform: scale3d(1.05,.95, 1); opacity: .9;}
-  to {transform: scale3d(); opacity: 1;}
+  from {transform: rotateX( 30deg  ); opacity:  0;}
+  20%  {transform: rotateX( 60deg  ); opacity: .2;}
+  30%  {transform: rotateX( 90deg  ); opacity: .3;}
+  40%  {transform: rotateX( 120deg ); opacity: .4;}
+  50%  {transform: rotateX( 150deg ); opacity: .5;}
+  60%  {transform: rotateX( 180deg ); opacity: .6;}
+  70%  {transform: rotateX( 210deg ); opacity: .7;}
+  80%  {transform: rotateX( 240deg ); opacity: .9;}
+  to   {transform: rotateX( 0deg ); opacity:  1;}
 }
 
 #about-W { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0s; }
