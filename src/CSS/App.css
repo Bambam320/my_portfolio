@@ -12,6 +12,21 @@
   margin: 0;
 }
 
+/* 
+  Local font
+*/
+
+@font-face {
+  font-family: 'VarelaRound';
+  src: local('VarelaRound-Regular.ttf'), 
+       url('../fonts/VarelaRound-Regular.ttf') format('truetype');
+}
+
+html, body {
+  font-family: 'VarelaRound', sans-serif;
+}
+
+
 /*
   3. Allow percentage-based heights in the application
 */
@@ -97,9 +112,4 @@ p, h1, h2, h3, h4, h5, h6 {
   to {
     transform: rotate(360deg);
   }
-}
-
-
-body {
-  font-family: 'Varela Round', sans-serif;
 }
