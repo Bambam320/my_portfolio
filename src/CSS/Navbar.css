@@ -36,8 +36,21 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  width: 10%;
+  width: 15%;
   padding: 2rem 0;
+  margin-left: 2rem;
+}
+
+.navbar-left:hover {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 15%;
+  padding: 2rem 0;
+  margin-left: 2rem;
 }
 
 @keyframes fade-in {
@@ -67,6 +80,7 @@
 .navbar-left img {
   height: 75%;
   width: 75%;
+  max-width: fit-content;
   border-radius: 40%;
   box-shadow: 0 0 39px 10px hsla(151, 81%, 25%, 0.895);
   animation: fade-in 2s ease-in forwards;
@@ -77,15 +91,14 @@
   cursor: pointer;
 }
 
-.navbar-left h2 {
-  margin-top: 1rem;
-  font-size: 2.35rem;
-  color: hsla(253, 88%, 44%, 0.895);
+.navbar-container .navbar-left h2 {
+  display: none;
 }
 
-.navbar-left p {
-  margin-top: 1rem;
-  font-size: 1.25rem;
+.navbar-container:hover .navbar-left h2 {
+  display: contents;
+  margin-top: 6rem;
+  font-size: 2rem;
   color: hsla(253, 88%, 44%, 0.895);
 }
 
@@ -120,7 +133,6 @@
   /* background-color: #6e3aae; */
 }
 
-/* put a flipping word here every now and then and maybe a border */
 .nav-item .active {
   color: hsla(253, 88%, 44%, 0.895);
   border-bottom: 5px solid hsla(253, 88%, 44%, 0.895);
@@ -147,15 +159,24 @@
   padding: 0 6px;
 }
 
-.navbar-right {
-  /* margin: 2rem 0 5rem; */
+.navbar-container:hover .navbar-right {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
   gap: 2rem;
   height: 100%;
-  width: 5%;
+  width: 10%;
+}
+
+.navbar-right {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  width: 10%;
 }
 
 .nav-icon {

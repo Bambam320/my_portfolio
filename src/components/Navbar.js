@@ -3,7 +3,6 @@ import { useNavigate, NavLink } from 'react-router-dom';
 import { BsMedium, BsLinkedin, BsGithub } from 'react-icons/bs';
 import emblem from '../Media/Images/Emblem.png';
 import "../CSS/Navbar.css";
-import Testing from './Testing';
 
 function Navbar() {
   const navigate = useNavigate()
@@ -40,6 +39,7 @@ function Navbar() {
       <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
         <div className="navbar-left">
           <img src={emblem} alt="IM" onClick={handleLogoClick} />
+          <h2> Full Stack Developer</h2>
         </div>
         <ul className="nav-links">
           <li className="nav-item" id="first-nav-item">
