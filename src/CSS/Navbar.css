@@ -3,7 +3,7 @@
 }
 
 .navbar-container {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -17,7 +17,7 @@
 }
 
 .navbar-container:hover {
-  position: fixed;
+  position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -31,17 +31,6 @@
 }
 
 .navbar-left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  width: 15%;
-  padding: 2rem 0;
-  margin-left: 2rem;
-}
-
-.navbar-left:hover {
   display: flex;
   gap: 20px;
   align-items: center;
@@ -99,6 +88,7 @@
   display: contents;
   margin-top: 6rem;
   font-size: 2rem;
+  cursor: pointer;
   color: hsla(253, 88%, 44%, 0.895);
 }
 
