@@ -1,32 +1,23 @@
 .about-container {
-  padding: 2.5rem 0 5rem 20rem;
-  min-height: 100vh;
+  margin: 20rem 2.5rem 0 2.5rem;
+  /* min-height: 100vh; */
+  position: relative;
   display: flex;
-  align-items: center;
+  align-content:space-around ; 
   justify-content: space-between;
   background-color: inherit;
 }
 
 /* left hand */
 .about-left-box {
-  padding-left: 5.5rem;
-}
-
-.about-left-title:before {
-  content: '';
-  position: absolute;
-  font-family: cursive;
-  color: #A12322;
-  font-size: 14px;
-  font-weight: 200;
-  margin-top: -5rem;
-  left: -1.25rem;
+  padding-left: 2rem;
 }
 
 .about-left-title {
-  position: relative;
-  font-size: 7.75rem;
+  /* position: relative; */
+  font-size: 3.25rem;
   line-height: -1.25rem;
+  color: hsla(253, 88%, 44%, 0.895);
 }
 
 .about-left-title span {
