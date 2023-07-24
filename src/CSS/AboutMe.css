@@ -1,9 +1,11 @@
 .about-container {
-  margin: 0 50px;
+  margin: 3rem 6rem;
   width: auto;
   /* min-height: 100vh; */
   position: relative;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(2rem, auto);
   /* align-content:space-around ; 
   justify-content: space-between; */
   background-color: inherit;
@@ -42,6 +44,7 @@
   color: hsla(253, 88%, 44%, 0.895);
 }
 
+//use a lift keyframe to raise the letter or a scale to make it bigger or something like that
 .about-left-title span {
   display: inline-block;
   transition: color .35s ease;
@@ -51,7 +54,7 @@
   color: #f2f2f2
 }
 
-start so they flip forward and to their place and backward to their place // alternating
+/* start so they flip forward and to their place nmand backward to their place // alternating */
 @keyframes aboutLettering {
   from {transform: rotateX( 30deg  ); opacity:  0;}
   20%  {transform: rotateX( 60deg  ); opacity: .2;}
@@ -63,6 +66,7 @@ start so they flip forward and to their place and backward to their place // alt
   80%  {transform: rotateX( 240deg ); opacity: .9;}
   to   {transform: rotateX( 0deg ); opacity:  1;}
 }
+/* https://www.joshwcomeau.com/css/transforms/ */
 
 #about-W { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0s; }
 #about-E { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.05s; }
@@ -397,22 +401,22 @@ start so they flip forward and to their place and backward to their place // alt
 
 /* Formatting for 1400px */
 @media (max-width: 1400px) {
-  .about-left-title {
+  /* .about-left-title {
     font-size: 7rem;
     line-height: 8.25rem;
-  }
+  } */
 }
 
 /* Formatting for 1300px */
 @media (max-width: 1300px) {
-  .about-left-title {
+  /* .about-left-title {
     font-size: 6.5rem;
     line-height: 7.5rem;
   }
   .about-right-title {
     font-size: 5rem;
     line-height: 12rem;
-  }
+  } */
 }
 
 /* Formatting for 1250px */

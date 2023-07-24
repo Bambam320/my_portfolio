@@ -23,7 +23,7 @@ function AboutMe() {
   // include an easter egg in the console, maybe just 42
   return (
     <div className="about-container">
-      <div className="about-left-box">
+      <div className="about-title"> {/* about-left-box */}
         {/* change animation to rotate 360 on y and then backflip */}
         <h1 className="about-left-title">
           <span id="about-W">W</span>
