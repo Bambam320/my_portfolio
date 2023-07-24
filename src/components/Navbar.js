@@ -36,10 +36,10 @@ function Navbar() {
         <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
         <span className={navActive ? "navbar-line navActive" : "navbar-line"}></span>
       </p>
-      <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
+      {/* <div className={navActive ? "navbar-container navActive" : "navbar-container"}>
         <div className="navbar-left">
           <img src={emblem} alt="IM" onClick={handleLogoClick} />
-          <h2> Full Stack Developer</h2>
+          <h2> Full Stack Developer</h2> */}
         </div>
         <ul className="nav-links">
           <li className="nav-item" id="first-nav-item">

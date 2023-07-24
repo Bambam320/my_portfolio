@@ -51,7 +51,7 @@
   color: #f2f2f2
 }
 
-/* start so they flip forward and to their place and backward to their place // alternating*/
+start so they flip forward and to their place and backward to their place // alternating
 @keyframes aboutLettering {
   from {transform: rotateX( 30deg  ); opacity:  0;}
   20%  {transform: rotateX( 60deg  ); opacity: .2;}
