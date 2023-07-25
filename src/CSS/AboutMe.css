@@ -12,46 +12,25 @@
 }
 /* use grid columns x2 with lines to mark up positioning */
 /* left hand */
-.about-left-box {
-  padding-left: 2rem;
+.about-title {
+  padding-left: 1rem 3rem;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
 
-/* .wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 100px;
-}
-
-.box1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-
-.box2 {
-  grid-column-start: 1;
-  grid-row-start: 3;
-  grid-row-end: 5;
-} */
-
-.about-left-title {
-  /* position: relative; */
-  font-size: 3.25rem;
+.title-letters {
+  display: inline-block;
+  font-size: 2rem;
   line-height: -1.25rem;
   color: hsla(253, 88%, 44%, 0.895);
-}
-
-//use a lift keyframe to raise the letter or a scale to make it bigger or something like that
-.about-left-title span {
-  display: inline-block;
   transition: color .35s ease;
 }
 
-.about-left-title span:hover {
-  color: #f2f2f2
+.title-letters span:hover {
+  color: #f2f2f2;
+  transform: scale(2);
 }
 
 /* start so they flip forward and to their place nmand backward to their place // alternating */
@@ -333,7 +312,7 @@
   opacity: 0;
 }
 
-.about-right-title:before {
+/* .about-right-title:before {
   content: '';
   position: absolute;
   font-family: cursive;
@@ -342,7 +321,7 @@
   font-weight: 200;
   margin-top: -3.75rem;
   left: -1rem;
-}
+} */
 
 .about-right-title {
   position: relative;
@@ -352,7 +331,7 @@
   font-weight: 500;
 }
 
-.about-right-title:after {
+/* .about-right-title:after {
   content: '';
   position: absolute;
   font-family: cursive;
@@ -361,9 +340,9 @@
   font-weight: 200;
   left: -1rem;
   bottom: -3.75rem;
-}
+} */
 
-.about-right-description:before {
+/* .about-right-description:before {
   content: '';
   position: absolute;
   font-family: cursive;
@@ -372,7 +351,7 @@
   font-weight: 200;
   margin-top: -2.5rem;
   left: -1rem;
-}
+} */
 
 .about-right-description {
   margin-top: 2rem;
@@ -388,7 +367,7 @@
   cursor: pointer;
 }
 
-.about-right-description:after {
+/* .about-right-description:after {
   content: '';
   position: absolute;
   font-family: cursive;
@@ -397,7 +376,30 @@
   font-weight: 200;
   left: -1rem;
   bottom: -2.5rem;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Formatting for 1400px */
 @media (max-width: 1400px) {

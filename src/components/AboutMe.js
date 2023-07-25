@@ -23,9 +23,10 @@ function AboutMe() {
   // include an easter egg in the console, maybe just 42
   return (
     <div className="about-container">
+
       <div className="about-title"> {/* about-left-box */}
         {/* change animation to rotate 360 on y and then backflip */}
-        <h1 className="about-left-title">
+        <h1 className="title-letters">
           <span id="about-W">W</span>
           <span id="about-E">E</span>
           <span id="about-L">L</span>
@@ -109,12 +110,25 @@ function AboutMe() {
           <span id="about-Nx5">N</span>
           <span id="about-Ex11">E</span>
           <span id="about-Rx4">R</span>
-        </h1>
-        {/* Add true true and console log description with typing animation */}
+        </h1>    
+      </div>
+
+      <div className="about-left">
         <p className='about-left-description'>
           Full Stack Developer && Language Enthusiast
         </p>
-        <div className='about-left-button-box'>
+        
+      </div>
+
+      <div className='about-right'>
+        <div className='about-right-title'> About Me </div>
+        <p className='about-right-description'>
+          About me from Linkedin
+        </p>
+      </div>
+
+      <div className="about-bottom">
+      <div className='about-left-button-box'>
           <button 
             onClick={() => navigate('/contact')} 
             className='about-contact-button'
@@ -149,12 +163,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className='about-right-box'>
-        <div className='about-right-title'> About Me </div>
-        <p className='about-right-description'>
-          About me from Linkedin
-        </p>
-      </div>
+
     </div>
   )
 }
