@@ -24,7 +24,7 @@ function AboutMe() {
   return (
     <div className="about-container">
 
-      <div className="about-title"> {/* about-left-box */}
+      <div className="about-title">
         {/* change animation to rotate 360 on y and then backflip */}
         <h1 className="title-letters">
           <span id="about-W">W</span>
@@ -114,21 +114,21 @@ function AboutMe() {
       </div>
 
       <div className="about-left">
-        <p className='about-left-description'>
+        {/* <p className='about-left-description'>
           Full Stack Developer && Language Enthusiast
-        </p>
+        </p> */}
         
       </div>
 
       <div className='about-right'>
-        <div className='about-right-title'> About Me </div>
+        {/* <div className='about-right-title'> About Me </div>
         <p className='about-right-description'>
           About me from Linkedin
-        </p>
+        </p> */}
       </div>
 
       <div className="about-bottom">
-        <div className='about-left-button-box'>
+        {/* <div className='about-left-button-box'>
           <button 
             onClick={() => navigate('/contact')} 
             className='about-contact-button'
@@ -161,7 +161,7 @@ function AboutMe() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
     </div>

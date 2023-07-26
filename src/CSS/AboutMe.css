@@ -13,37 +13,42 @@
 /* use grid columns x2 with lines to mark up positioning */
 /* left hand */
 .about-title {
-  padding-left: 1rem 3rem;
+  padding: .5rem 2rem;
   grid-column: 1 / 3;
-  grid-row: 1 / 2;
+  grid-row: 1 / 3;
+  text-align: center;
+
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
 
 .title-letters {
   display: inline-block;
-  font-size: 2rem;
-  line-height: -1.25rem;
+  font-size: 4rem;
+  line-height: 6.25rem;
   color: hsla(253, 88%, 44%, 0.895);
-  transition: color .35s ease;
 }
 
 .title-letters span:hover {
-  color: #f2f2f2;
-  transform: scale(2);
+  /* color: hsla(130, 70%, 47%, 0.874);
+  text-shadow: hsla(253, 88%, 44%, 0.895) 2px 2px 8px;
+  transition: color .35s ease, text-shadow .5s ease;
+  cursor: pointer; */
 }
 
 /* start so they flip forward and to their place nmand backward to their place // alternating */
 @keyframes aboutLettering {
-  from {transform: rotateX( 30deg  ); opacity:  0;}
-  20%  {transform: rotateX( 60deg  ); opacity: .2;}
-  30%  {transform: rotateX( 90deg  ); opacity: .3;}
-  40%  {transform: rotateX( 120deg ); opacity: .4;}
-  50%  {transform: rotateX( 150deg ); opacity: .5;}
-  60%  {transform: rotateX( 180deg ); opacity: .6;}
-  70%  {transform: rotateX( 210deg ); opacity: .7;}
-  80%  {transform: rotateX( 240deg ); opacity: .9;}
-  to   {transform: rotateX( 0deg ); opacity:  1;}
+  from {transform: rotateY( 30deg  ); opacity:  0;}
+  10%  {transform: rotateY( 60deg  ); opacity: .1;}
+  20%  {transform: rotateY( 90deg  ); opacity: .2;}
+  30%  {transform: rotateY( 120deg  ); opacity: .3;}
+  40%  {transform: rotateY( 150deg ); opacity: .4;}
+  50%  {transform: rotateY( 180deg ); opacity: .5;}
+  60%  {transform: rotateY( 210deg ); opacity: .6;}
+  70%  {transform: rotateY( 240deg ); opacity: .7;}
+  80%  {transform: rotateY( 270deg ); opacity: .8;}
+  90%  {transform: rotateY( 300deg ); opacity: .9;}
+  to   {transform: rotateY( 330deg ); opacity:  1;}
 }
 /* https://www.joshwcomeau.com/css/transforms/ */
 
@@ -136,7 +141,7 @@
 
 .about-left {
   grid-column: 1 / 2;
-  grid-row: 2 / 6;
+  grid-row: 3 / 6;
 }
 
 .about-left-title:after {
@@ -312,7 +317,7 @@
 
 .about-right {
   grid-column: 2 / 3;
-  grid-row: 2 / 6;
+  grid-row: 3 / 6;
   /* padding-right: 6.5rem; */
   /* width: 42.5%; */
   /* animation: aboutRightHandFade 1.5s ease 1.5s forwards; */
