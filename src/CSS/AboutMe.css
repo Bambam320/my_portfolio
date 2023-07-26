@@ -1,17 +1,14 @@
 .about-container {
   margin: 3rem 6rem;
   width: auto;
-  /* min-height: 100vh; */
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: minmax(2rem, auto);
-  /* align-content:space-around ; 
-  justify-content: space-between; */
   background-color: inherit;
 }
-/* use grid columns x2 with lines to mark up positioning */
-/* left hand */
+
+/* title */
 .about-title {
   padding: .5rem 2rem;
   grid-column: 1 / 3;
@@ -19,8 +16,6 @@
   text-align: center;
 
 }
-
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout */
 
 .title-letters {
   display: inline-block;
@@ -30,46 +25,55 @@
 }
 
 .title-letters span:hover {
-  /* color: hsla(130, 70%, 47%, 0.874);
+  color: hsla(130, 70%, 47%, 0.874);
   text-shadow: hsla(253, 88%, 44%, 0.895) 2px 2px 8px;
   transition: color .35s ease, text-shadow .5s ease;
-  cursor: pointer; */
+  cursor: pointer;
 }
 
-/* start so they flip forward and to their place nmand backward to their place // alternating */
 @keyframes aboutLettering {
-  from {transform: rotateY( 30deg  ); opacity:  0;}
-  10%  {transform: rotateY( 60deg  ); opacity: .1;}
-  20%  {transform: rotateY( 90deg  ); opacity: .2;}
-  30%  {transform: rotateY( 120deg  ); opacity: .3;}
-  40%  {transform: rotateY( 150deg ); opacity: .4;}
-  50%  {transform: rotateY( 180deg ); opacity: .5;}
-  60%  {transform: rotateY( 210deg ); opacity: .6;}
-  70%  {transform: rotateY( 240deg ); opacity: .7;}
-  80%  {transform: rotateY( 270deg ); opacity: .8;}
-  90%  {transform: rotateY( 300deg ); opacity: .9;}
-  to   {transform: rotateY( 330deg ); opacity:  1;}
+  from {transform: rotate(-30deg) translateY(-100%); opacity: 0;}
+  10%  {transform: rotate(-30deg) translateY(-100%); opacity: .1;}
+  20%  {transform: rotate(-30deg) translateY(-100%); opacity: .2;}
+  30%  {transform: rotate(-30deg) translateY(-100%); opacity: .3;}
+  40%  {transform: rotate(-30deg) translateY(-100%); opacity: .4;}
+  50%  {transform: rotate(-30deg) translateY(-100%); opacity: .5;}
+  60%  {transform: rotate(-30deg) translateY(-100%); opacity: .6;}
+  70%  {transform: rotate(-30deg) translateY(-100%); opacity: .7;}
+  80%  {transform: rotate(-30deg) translateY(-100%); opacity: .8;}
+  90%  {transform: rotate(-30deg) translateY(-100%); opacity: .9;}
+  to   {transform: rotate(-30deg) translateY(-100%); opacity:  1;}
 }
 /* https://www.joshwcomeau.com/css/transforms/ */
 
-#about-W { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0s; }
-#about-E { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.05s; }
-#about-L { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.1s; }
-#about-C { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.15s; }
-#about-O { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.2s; }
-#about-M { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.25s; }
-#about-Ex2 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.3s; }
-#about-wave { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.35s; }
+@keyframes aboutFadeIn {
+  from {transform: scale3d(1, 1, 1); opacity: 0;}
+  30% {transform: scale3d(1.25, 0.75, 1)}
+  40% {transform: scale3d(0.75, 1.2, 1)}
+  50% {transform: scale3d(1.15, 0.85, 1); opacity: 1;}
+  65% {transform: scale3d(.95, 1.05, 1)}
+  75% {transform: scale3d(1.05, .95, 1)}
+  to {transform: scale3d(1, 1, 1); opacity: 1;}
+}
 
-#about-Mx2 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.4s; }
-#about-Y { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.45s; }
+#about-W { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.s }
+#about-E { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.05s; }
+#about-L { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.1s; }
+#about-C { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.15s; }
+#about-O { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.2s; }
+#about-M { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.25s; }
+#about-Ex2 { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.3s; }
+#about-wave { opacity: 0; animation: aboutFadeIn 1s ease-in-out forwards; animation-delay: 1.35s; }
 
-#about-N { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.5s; }
+#about-Mx2 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.4s; }
+#about-Y { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.45s; }
+
+#about-N { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.5s; }
 #about-A { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.55s; }
-#about-Mx3 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.6s; }
-#about-Ex3 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.65s; }
-#about-I { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.7s; }
-#about-S { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.75s; }
+#about-Mx3 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.6s; }
+#about-Ex3 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.65s; }
+#about-I { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.7s; }
+#about-S { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 1.75s; }
 
 #about-Ix2 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.75s; }
 #about-G { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 0.75s; }
@@ -135,16 +139,16 @@
 #about-Ex11 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 2.55s; }
 #about-Rx4 { opacity: 0; animation: aboutLettering 1s ease-in-out forwards; animation-delay: 2.6s; }
 
-@keyframes aboutTitleAfterFade {
-  100% {opacity: 1}
-}
+/* @keyframes aboutTitleAfterFade { */
+  /* 100% {opacity: 1} */
+/* } */
 
 .about-left {
   grid-column: 1 / 2;
   grid-row: 3 / 6;
 }
 
-.about-left-title:after {
+/* .about-left-title:after { */
   /* content: '';
   position: absolute;
   font-size: 14px;
@@ -159,13 +163,13 @@
   -o-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
   animation: aboutTitleAfterFade .5s ease 1.8s forwards;
   opacity: 0; */
-}
+/* } */
 
-@keyframes aboutDescriptionFade {
-  100% {opacity: 1}
-}
+/* @keyframes aboutDescriptionFade { */
+  /* 100% {opacity: 1} */
+/* } */
 
-.about-left-description:before {
+/* .about-left-description:before { */
   /* content: '';
   font-family: cursive;
   color: #f2f2f2;
@@ -176,9 +180,9 @@
   left: -1.25rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
   opacity: 0; */
-}
+/* } */
 
-.about-left-description {
+/* .about-left-description { */
   /* position: relative;
   color: #8d8d8d;
   font-size: 1.6rem;
@@ -186,9 +190,9 @@
   margin-top: 4rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
   opacity: 0; */
-}
+/* } */
 
-.about-left-description:after {
+/* .about-left-description:after { */
   /* content: '</p>';
   font-size: 14px;
   font-family: cursive;
@@ -198,17 +202,17 @@
   bottom: -2.25rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
   opacity: 0; */
-}
+/* } */
 
-@keyframes aboutButtonBoxUp {
+/* @keyframes aboutButtonBoxUp {
   100% {
     margin-top: 6.5rem; 
     margin-bottom: 0; 
     opacity: 1
   }
-}
+} */
 
-.about-left-button-box {
+/* .about-left-button-box { */
   /* display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,9 +220,9 @@
   margin-bottom: -5rem;
   opacity: 0;
   animation: aboutButtonBoxUp 1s ease 1.25s forwards; */
-}
+/* } */
 
-.about-contact-button {
+/* .about-contact-button { */
   /* position: relative;
   display: block;
   font-size: 16px;
@@ -233,13 +237,13 @@
   cursor: pointer;
   overflow: hidden;
   transition: 0.3s ease-out all; */
-}
+/* } */
 
-.about-contact-button:hover {
+/* .about-contact-button:hover { */
   /* color: #1f1f1f; */
-}
+/* } */
 
-.about-contact-button:after {
+/* .about-contact-button:after { */
   /* content: '';
   background: #08fdd8;
   height: 220px;
@@ -250,70 +254,70 @@
   transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
   width: 350px;
   z-index: -10; */
-}
+/* } */
 
-.about-contact-button:hover:after {
+/* .about-contact-button:hover:after { */
   /* left: -50px; */
-}
+/* } */
 
-.about-resume-container {
+/* .about-resume-container { */
   /* margin-left: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem; */
-}
+/* } */
 
-.about-resume-title {
+/* .about-resume-title { */
   /* font-size: 2.085rem;
   font-weight: 400;
   font-style: italic;
   color: #ffffff;
   text-align: center; */
-}
+/* } */
 
-.about-resume-buttons-wrapper {
+/* .about-resume-buttons-wrapper { */
   /* display:flex;
   align-items: center;
   justify-content: center;
   gap: .5rem; */
-}
+/* } */
 
-.about-resume-pdf {
+/* .about-resume-pdf { */
   /* height: 5.4rem;
   width: 5.4rem;
   margin-top: .2rem;
   transition: all ease .15s; */
-}
+/* } */
 
-.about-resume-pdf:hover {
+/* .about-resume-pdf:hover { */
   /* cursor: pointer;
   transform: scale(1.1); */
-}
+/* } */
 
-.about-resume-pdf:active {
+/* .about-resume-pdf:active { */
   /* transform: scale(.95); */
-}
+/* } */
 
-.about-resume-googleDocs {
+/* .about-resume-googleDocs { */
   /* height: 5rem;
   width: 5rem;
   transition: all ease .15s; */
-}
+/* } */
 
-.about-resume-googleDocs:hover {
+/* .about-resume-googleDocs:hover { */
   /* cursor: pointer;
   transform: scale (1.1); */
-}
+/* } */
 
-.about-resume-googleDocs:active {
+/* .about-resume-googleDocs:active { */
   /* transform: scale(.9); */
-}
+/* } */
 
 /* right hand */
-@keyframes aboutRightHandFade {
-  100% {opacity : 1}
-}
+/* @keyframes aboutRightHandFade { */
+  /* 100% {opacity : 1} */
+/* } */
 
 .about-right {
   grid-column: 2 / 3;
@@ -335,13 +339,13 @@
   left: -1rem;
 } */
 
-.about-right-title {
+/* .about-right-title { */
   /* position: relative;
   color: #08fdd8;
   font-size: 5.25rem;
   line-height: 12.65rem;
   font-weight: 500; */
-}
+/* } */
 
 /* .about-right-title:after {
   content: '';
@@ -365,19 +369,19 @@
   left: -1rem;
 } */
 
-.about-right-description {
+/* .about-right-description { */
   /* margin-top: 2rem;
   position: relative;
   font-size: 1.7rem;
   line-height: 1.5; */
-}
+/* } */
 
-.about-right-description span {
+/* .about-right-description span { */
   /* text-decoration: underline;
   font-weight: 500;
   color: #08fdd8;
   cursor: pointer; */
-}
+/* } */
 
 /* .about-right-description:after {
   content: '';
