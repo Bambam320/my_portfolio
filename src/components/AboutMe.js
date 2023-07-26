@@ -128,7 +128,7 @@ function AboutMe() {
       </div>
 
       <div className="about-bottom">
-      <div className='about-left-button-box'>
+        <div className='about-left-button-box'>
           <button 
             onClick={() => navigate('/contact')} 
             className='about-contact-button'

@@ -134,8 +134,13 @@
   100% {opacity: 1}
 }
 
+.about-left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 6;
+}
+
 .about-left-title:after {
-  content: '';
+  /* content: '';
   position: absolute;
   font-size: 14px;
   font-weight: 200;
@@ -148,7 +153,7 @@
   -ms-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
   -o-animation: aboutTitleAfterFade .5s ease 1.8s forwards;
   animation: aboutTitleAfterFade .5s ease 1.8s forwards;
-  opacity: 0;
+  opacity: 0; */
 }
 
 @keyframes aboutDescriptionFade {
@@ -156,7 +161,7 @@
 }
 
 .about-left-description:before {
-  content: '';
+  /* content: '';
   font-family: cursive;
   color: #f2f2f2;
   font-size: 14px;
@@ -165,21 +170,21 @@
   margin-top: -2.65rem;
   left: -1.25rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
-  opacity: 0;
+  opacity: 0; */
 }
 
 .about-left-description {
-  position: relative;
+  /* position: relative;
   color: #8d8d8d;
   font-size: 1.6rem;
   letter-spacing: 4px;
   margin-top: 4rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
-  opacity: 0;
+  opacity: 0; */
 }
 
 .about-left-description:after {
-  content: '</p>';
+  /* content: '</p>';
   font-size: 14px;
   font-family: cursive;
   color: #515152;
@@ -187,7 +192,7 @@
   left: -1.25rem;
   bottom: -2.25rem;
   animation: aboutDescriptionFade 1s ease .65s forwards;
-  opacity: 0;
+  opacity: 0; */
 }
 
 @keyframes aboutButtonBoxUp {
@@ -199,17 +204,17 @@
 }
 
 .about-left-button-box {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 11.5rem;
   margin-bottom: -5rem;
   opacity: 0;
-  animation: aboutButtonBoxUp 1s ease 1.25s forwards;
+  animation: aboutButtonBoxUp 1s ease 1.25s forwards; */
 }
 
 .about-contact-button {
-  position: relative;
+  /* position: relative;
   display: block;
   font-size: 16px;
   line-height: 50px;
@@ -222,15 +227,15 @@
   text-align: center;
   cursor: pointer;
   overflow: hidden;
-  transition: 0.3s ease-out all;
+  transition: 0.3s ease-out all; */
 }
 
 .about-contact-button:hover {
-  color: #1f1f1f;
+  /* color: #1f1f1f; */
 }
 
 .about-contact-button:after {
-  content: '';
+  /* content: '';
   background: #08fdd8;
   height: 220px;
   left: -350px;
@@ -239,65 +244,65 @@
   transform: rotate(-45deg);
   transition: all .8s cubic-bezier(0.19, 1, 0.22, 1);
   width: 350px;
-  z-index: -10;
+  z-index: -10; */
 }
 
 .about-contact-button:hover:after {
-  left: -50px;
+  /* left: -50px; */
 }
 
 .about-resume-container {
-  margin-left: 2.5rem;
+  /* margin-left: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; */
 }
 
 .about-resume-title {
-  font-size: 2.085rem;
+  /* font-size: 2.085rem;
   font-weight: 400;
   font-style: italic;
   color: #ffffff;
-  text-align: center;
+  text-align: center; */
 }
 
 .about-resume-buttons-wrapper {
-  display:flex;
+  /* display:flex;
   align-items: center;
   justify-content: center;
-  gap: .5rem;
+  gap: .5rem; */
 }
 
 .about-resume-pdf {
-  height: 5.4rem;
+  /* height: 5.4rem;
   width: 5.4rem;
   margin-top: .2rem;
-  transition: all ease .15s;
+  transition: all ease .15s; */
 }
 
 .about-resume-pdf:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+  /* cursor: pointer;
+  transform: scale(1.1); */
 }
 
 .about-resume-pdf:active {
-  transform: scale(.95);
+  /* transform: scale(.95); */
 }
 
 .about-resume-googleDocs {
-  height: 5rem;
+  /* height: 5rem;
   width: 5rem;
-  transition: all ease .15s;
+  transition: all ease .15s; */
 }
 
 .about-resume-googleDocs:hover {
-  cursor: pointer;
-  transform: scale (1.1);
+  /* cursor: pointer;
+  transform: scale (1.1); */
 }
 
 .about-resume-googleDocs:active {
-  transform: scale(.9);
+  /* transform: scale(.9); */
 }
 
 /* right hand */
@@ -305,11 +310,13 @@
   100% {opacity : 1}
 }
 
-.about-right-box {
-  padding-right: 6.5rem;
-  width: 42.5%;
-  animation: aboutRightHandFade 1.5s ease 1.5s forwards;
-  opacity: 0;
+.about-right {
+  grid-column: 2 / 3;
+  grid-row: 2 / 6;
+  /* padding-right: 6.5rem; */
+  /* width: 42.5%; */
+  /* animation: aboutRightHandFade 1.5s ease 1.5s forwards; */
+  /* opacity: 0; */
 }
 
 /* .about-right-title:before {
@@ -324,11 +331,11 @@
 } */
 
 .about-right-title {
-  position: relative;
+  /* position: relative;
   color: #08fdd8;
   font-size: 5.25rem;
   line-height: 12.65rem;
-  font-weight: 500;
+  font-weight: 500; */
 }
 
 /* .about-right-title:after {
@@ -354,17 +361,17 @@
 } */
 
 .about-right-description {
-  margin-top: 2rem;
+  /* margin-top: 2rem;
   position: relative;
   font-size: 1.7rem;
-  line-height: 1.5;
+  line-height: 1.5; */
 }
 
 .about-right-description span {
-  text-decoration: underline;
+  /* text-decoration: underline;
   font-weight: 500;
   color: #08fdd8;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 /* .about-right-description:after {
@@ -381,7 +388,10 @@
 
 
 
-
+.about-bottom {
+  grid-column: 1 / 3;
+  grid-row: 6 / 8;
+}
 
 
 
