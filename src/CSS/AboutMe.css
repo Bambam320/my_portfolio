@@ -14,13 +14,26 @@
   grid-column: 1 / 3;
   grid-row: 1 / 3;
   text-align: center;
+  display: block;
+  /* display:inline-flexbox; */
+}
+
+.title-row {
+  display: flex;
 }
 
 .title-letters {
-  display:inline-flex;
   font-size: 4rem;
   line-height: 6.25rem;
   color: hsla(253, 88%, 44%, 0.895);
+  /* display: flex; */
+}
+
+.title-letters span {
+  /* flex-direction: column; */
+  /* height:min-content; */
+  /* align-self:safe; */
+  /* display:inline-flex; */
 }
 
 .title-letters span:hover {

@@ -22,12 +22,11 @@ function AboutMe() {
 
   // include an easter egg in the console, maybe just 42
   return (
-    <div className="about-container">
+    <>
 
-      <div className="about-title">
+    <div className="about-title">
         {/* change animation to rotate 360 on y and then backflip */}
-        <div>
-
+      <div className="title-row">
         <h1 className="title-letters">
           <span id="about-W">W</span>
           <span id="about-E">E</span>
@@ -38,8 +37,8 @@ function AboutMe() {
           <span id="about-Ex2">E</span>
           <span id="about-wave">👋</span>
         </h1>
-        </div>
-        <div>
+      </div>
+<div className="title-row">
 
         <h1 className="title-letters">
           <span id="about-Mx2">M</span>
@@ -68,10 +67,10 @@ function AboutMe() {
           <span id="about-K">K</span>
           <span id="about-Ix3">I</span>
           <span id="about-Nx2">N</span>
+        
         </h1>
-        </div>
-        <div>
-
+</div>
+  
         <h1 className="title-letters">
           <span id="about-Ix4">I</span>
           <span id="about-apostrophe">'</span>
@@ -121,9 +120,10 @@ function AboutMe() {
           <span id="about-Ex11">E</span>
           <span id="about-Rx4">R</span>
         </h1>    
-        </div>
+  
       </div>
 
+    <div className="about-container">
       <div className="about-left">
         {/* <p className='about-left-description'>
           Full Stack Developer && Language Enthusiast
@@ -176,6 +176,7 @@ function AboutMe() {
       </div>
 
     </div>
+    </>
   )
 }
 
