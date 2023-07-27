@@ -24,6 +24,7 @@ function AboutMe() {
   return (
     <>
 
+    <div className="about-container">
       <div className="about-title">
         {/* change animation to rotate 360 on y and then backflip */}
         <div className="title-row">
@@ -123,7 +124,6 @@ function AboutMe() {
 
       </div>
 
-      <div className="about-container">
         <div className="about-left">
           {/* <p className='about-left-description'>
           Full Stack Developer && Language Enthusiast
