@@ -82,29 +82,32 @@ function AboutMe() {
     // const update = (d) => {console.log('update firing', overlaps, meetings); return [overlaps + 1, duration + d]};
     console.log('meetings start-->', meetings)
     // make a new 2D array with elements including [start, duration, finish] and sorts by start time
-    meetings = meetings.map((e) => {let [s, d] = e.split(','); return [+s, +d, end(+s, +d)]}).sort((a, b) => a[0] - b[0]);
+    meetings = meetings.map((e) => {let [s, d] = e.split(','); return [+s, +d, end(+s, +d)]}).sort((a, b) => a[0] == b[0] ? a[2] - b[2] : a[0] - b[0]);
     console.log('meetings', meetings)
     // check for edge cases and return error if met
-    if ( meetings.find((e) => {const [s, d, f] = e; return f > 1800 || s < 800 || d > 120 || d < 1}) || false ) return 'error';
-    make the ej<=ei portion count the whole overlap, its not doing that right now
+
+    have to fix the error catcher and write random tester
+    if ( meetings.find((e) => {const [s, d, f] = e; return f > 1800 || s < 800 || d > 120 || d < 1}) || false ||  ) return 'error';
     //loop through all meetings to find the conflicts
     for ( let i = 0, j = 1; i < meetings.length - 1; j++ ) {
       const [sI, _, eI, sJ, __, eJ] = meetings[i].concat(meetings[j]); 
       //if start of i meeting is after or equal to start of j meeting AND before end of j meeting
       // console.log(i, j)
       console.log('checking the vals', 'sI', sI, 'eI', eI, 'sJ', sJ, 'eJ', eJ)
+      // console.log('doing some math', calcMin())
       if (eJ > sI && eI > sJ) {
         // j contained in i
-        if ( eJ <= eI ) {
-          console.log('j contained in i calcmin', overlaps, duration, calcMin(eJ, eI) + calcMin(sI, sJ), '+ vals', [sI, _, eI, sJ, __, eJ])
-          const o = calcMin(eJ, eI) + calcMin(sI, sJ);
-          [overlaps, duration] = [overlaps + 1, duration + o];
-          console.log('j contained in i updated overlaps and duration', overlaps, duration)
-        } else {
-          console.log('j not contained in i calcmin', overlaps, duration, calcMin(sJ, eI), '+ vals', [sI, _, eI, sJ, __, eJ]);
-          [overlaps, duration] = [overlaps + 1, duration + calcMin(sJ, eI)];
-          console.log('j not contained in i updated overlaps and duration', overlaps, duration)
-        };
+        [overlaps, duration] = [overlaps + 1, duration + calcMin(Math.max(sI, sJ), Math.min(eI, eJ))];
+
+        // if ( eJ <= eI ) {
+        //   console.log('j contained in i calcmin', overlaps, duration, calcMin(eJ, eI) + calcMin(sI, sJ), '+ vals', [sI, _, eI, sJ, __, eJ])
+        //   const o = calcMin(eJ, eI) + calcMin(sI, sJ);
+        //   [overlaps, duration] = [overlaps + 1, duration + o];
+        //   console.log('j contained in i updated overlaps and duration', overlaps, duration)
+        // } else {
+        //   console.log('j not contained in i calcmin', overlaps, duration, calcMin(sJ, eI), '+ vals', [sI, _, eI, sJ, __, eJ]);
+        //   console.log('j not contained in i updated overlaps and duration', overlaps, duration)
+        // };
       };
       if ( j + 1 >= meetings.length ) {
         // console.log('j reached the end')  
@@ -124,20 +127,20 @@ function AboutMe() {
     // console.log('RESULT', beepboop(['0800,30', '0900,45']), 'generic office space quote') 
     // console.log('RESULT', beepboop(['0900,30', '0900,45']), [1, 30])
     // console.log('RESULT', beepboop(['0745,30', '0930,45', '1145,60', '1330,45']), 'error')
-    console.log('RESULT', beepboop(['0800,45', '0800,30', '0830,45']), [2, 45])
-    console.log('RESULT', beepboop(['0800,45', '0900,30']), 'generic office space quote')
-    console.log('RESULT', beepboop(['0800,45', '0830,30']), [1, 15])
-    console.log('RESULT', beepboop(['0800,30', '0800,45', '0815,45']), [3, 75])
-    console.log('RESULT', beepboop(['0730,60', '0930,60', '1330,45', '1530,45']), 'error')
-    console.log('RESULT', beepboop(['0800,30', '1130,60', '0815,45']), [1, 15])
-    console.log('RESULT', beepboop(['0900,30', '0915,60', '0945,45']), [2, 45])
-    console.log('RESULT', beepboop(['1215,45', '1200,30', '1215,60']), [3, 75]) 
-    console.log('RESULT', beepboop(['2515,43', '1230,45', '1030,115', '1100,43']), 'error')
-    console.log('RESULT', beepboop(['1230,45', '1030,90', '1100,43']), [1, 43])
+    // console.log('RESULT', beepboop(['0800,45', '0800,30', '0830,45']), [2, 45])
+    // console.log('RESULT', beepboop(['0800,45', '0900,30']), 'generic office space quote')
+    // console.log('RESULT', beepboop(['0800,45', '0830,30']), [1, 15])
+    // console.log('RESULT', beepboop(['0800,30', '0800,45', '0815,45']), [3, 75])
+    // console.log('RESULT', beepboop(['0730,60', '0930,60', '1330,45', '1530,45']), 'error')
+    // console.log('RESULT', beepboop(['0800,30', '1130,60', '0815,45']), [1, 15])
+    // console.log('RESULT', beepboop(['0900,30', '0915,60', '0945,45']), [2, 45])
+    // console.log('RESULT', beepboop(['1215,45', '1200,30', '1215,60']), [3, 75]) 
+    // console.log('RESULT', beepboop(['2515,43', '1230,45', '1030,115', '1100,43']), 'error')
+    // console.log('RESULT', beepboop(['1230,45', '1030,90', '1100,43']), [1, 43])
     console.log('RESULT', beepboop(['12:30,45', '1:15am,90', '1500,80']), 'error')
-    console.log('RESULT', beepboop(['1011,17', '1348,119', '1500,80']), [1, 47])
-    console.log('RESULT', beepboop(['0930,45', '1005,35', '1730,45']), 'error')
-    console.log('RESULT', beepboop(['0815,-45', '0800,90', '1100,50']), 'error')
+    // console.log('RESULT', beepboop(['1011,17', '1348,119', '1500,80']), [1, 47])
+    // console.log('RESULT', beepboop(['0930,45', '1005,35', '1730,45']), 'error')
+    // console.log('RESULT', beepboop(['0815,-45', '0800,90', '1100,50']), 'error')
   }
 
 
